@@ -1,0 +1,132 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sibo.WhiteList.Classes
+{
+    public class eConfiguration
+    {
+        public int intPkIdentificador { get; set; }
+        public bool bitSucActiva { get; set; }
+        public int intfkSucursal { get; set; }
+        public string strTipoIngreso { get; set; }
+        public int intMinutosDescontarTiquetes { get; set; }
+        public bool bitIngresoEmpSinPlan { get; set; }
+        public bool blnPermitirIngresoPantalla { get; set; }
+        public bool blnPermiteIngresosAdicionales { get; set; }
+        public int intMinutosNoReingreso { get; set; }
+        public bool blnLimpiarDescripcionAdicionales { get; set; }
+        public bool blnEntradaCumpleConPlan { get; set; }
+        public bool blnEntradaCumpleSinPlan { get; set; }
+        public int intDiasGraciaClientes { get; set; }
+        public bool bitBloqueoCitaNoCumplidaMSW { get; set; }
+        public bool bitBloqueoClienteNoApto { get; set; }
+        public bool bitBloqueoNoDisentimento { get; set; }
+        public bool bitBloqueoNoAutorizacionMenor { get; set; }
+        public bool bitConsultaInfoCita { get; set; }
+        public bool bitImprimirHoraReserva { get; set; }
+        public bool bitTiqueteClaseAsistido_alImprimir { get; set; }
+        public bool bitAccesoPorReservaWeb { get; set; }
+        public bool bitValidarPlanYReservaWeb { get; set; }
+        public bool bitValideContrato { get; set; }
+        public bool bitValideContratoPorFactura { get; set; }
+        public int intMinutosAntesReserva { get; set; }
+        public int intMinutosDespuesReserva { get; set; }
+        public int intdiassincita_bloqueoing { get; set; }
+        public int intentradas_sincita_bloqueoing { get; set; }
+        public bool bitIngresoTecladoHuella { get; set; }
+        public string strClave { get; set; }
+        public string strNivelSeguridad { get; set; }
+        public bool bitPermitirBorrarHuella { get; set; }
+        public bool bitIngresoMiniTouch { get; set; }
+        public bool bitTrabajarConDBEnOtroEquipo { get; set; }
+        public string strRutaNombreLogo { get; set; }
+        public int intUbicacionTeclasTeclado { get; set; }
+        public bool bitBaseDatosSQLServer { get; set; }
+        public int intTiempoParaLimpiarPantalla { get; set; }
+        public int intTipoUbicacionTeclado { get; set; }
+        public string strRutaNombreBanner { get; set; }
+        public bool bitIngresoAbreDesdeTouch { get; set; }
+        public int intNivelSeguirdadLectorUSB { get; set; }
+        public int intTimeOutLector { get; set; }
+        public int intTiempoDuermeHiloEnviaComandoSalida { get; set; }
+        public bool bitMensajeCumpleanos { get; set; }
+        public int intTiempoActualizaIngresos { get; set; }
+        public int intTiempoValidaSiAbrePuerta { get; set; }
+        public string strRutaArchivoGymsoftNet { get; set; }
+        public bool bitComplices_CortxIngs { get; set; }
+        public bool bitComplices_DescuentoTiq { get; set; }
+        public int intRangoHoraPrint { get; set; }
+        public string strTextoMensajeCumpleanos { get; set; }
+        public bool bitSolo1HuellaxCliente { get; set; }
+        public bool bitMultiplesPlanesVig { get; set; }
+        public int intComplices_Plan_CortxIngs { get; set; }
+        public string strTextoMensajeCortxIngs { get; set; }
+        public bool bitImagenSIBO { get; set; }
+        public string strColorPpal { get; set; }
+        public string strRutaGuiaMarcacion { get; set; }
+        public int intPasoFinalAutoregistroWeb { get; set; }
+        public bool bitAntipassbackEntrada { get; set; }
+        public bool bitReplicaImgsTCAM7000 { get; set; }
+        public int intTiempoReplicaImgsTCAM7000 { get; set; }
+        public bool bitAccesoDiscapacitados { get; set; }
+        public int intTiempoEspaciadoTramasReplicaImgsTCAM7000 { get; set; }
+        public int intTiempoMaximoEnvioImgsTCAM7000 { get; set; }
+        public int intCalidadHuella { get; set; }
+        public bool bitEsperarHuellaActualizar { get; set; }
+        public bool bitFirmarContratoAlEnrolar { get; set; }
+        public bool bitGenerarContratoPDFyEnviar { get; set; }
+        public int intNumeroDiasActualizacionHuella { get; set; }
+        public bool bitNoValidarHuella { get; set; }
+        public int intTiempoReplicaHuellasTCAM7000 { get; set; }
+        public int intTiempoPingContinuoTCAM7000 { get; set; }
+        public string strTipoIdenTributaria { get; set; }
+        public bool bitNo_Validar_Entrada_En_Salida { get; set; }
+        public string strIdentificadorUno { get; set; }
+        public string strIdentificadorDos { get; set; }
+        public string strPuertoCom { get; set; }
+        public int intVelocidadPuerto { get; set; }
+        public int intTiempoPulso { get; set; }
+        public bool bitBloqueoCita { get; set; }
+        public int intDiasEntreCitaRiesgo { get; set; }
+        public int intDiasEntreCitaNoRiesgo { get; set; }
+        public bool bitCambiarEstadoTiqueteClase { get; set; }
+        public int timeGetWhiteList { get; set; }
+        public int timeInsertEntries { get; set; }
+        public int timeGetConfiguration { get; set; }
+        public int timeGetClientMessages { get; set; }
+        public int timeGetTerminals { get; set; }
+        public string strPuertoComSalida { get; set; }
+        public bool bitConsentimientoInformado { get; set; }
+        public bool bitConsentimientoDatosBiometricos { get; set; }
+        public bool bitDatosVirtualesUsuario { get; set; }
+        public bool bitValidarHuellaMarcacionSDKAPI { get; set; }
+        public bool Validación_de_huella_de_marcación_con_SDK_del_webserver { get; set; }
+        public int intTimeoutValidarHuellaMarcacionSDKAPI { get; set; }
+        public int Timeout_Validación_de_huella_de_marcación_con_SDK_del_webserver { get; set; }
+        public bool bitValidarConfiguracionIngresoWeb { get; set; }
+        public string SMTPServer { get; set; }
+        public string user { get; set; }
+        public string password { get; set; }
+        public string port { get; set; }
+        public int timeGetPendingActions { get; set; }
+        public int timeRemoveFingerprints { get; set; }
+        public bool allowWhiteListTCAM { get; set; }
+        public int timeInsertWhiteListTCAM { get; set; }
+        public int timeTerminalConnections { get; set; }
+        public int intTiempoEsperaRespuestaReplicaHuellasTCAM7000 { get; set; }
+        public int timeWaitResponseReplicateUsers { get; set; }
+        public int timeWaitResponseDeleteFingerprint { get; set; }
+        public int timeWaitResponseDeleteUser { get; set; }
+        public int timeResetDownloadEvents { get; set; }
+        public int timeRemoveUsers { get; set; }
+        public int timeDowndloadEvents { get; set; }
+        public int timeHourSync { get; set; }
+        public int quantityAppAccessControlSimultaneous { get; set; }
+        public bool bitGenerarCodigoQRdeingresoparavalidarLocalmente { get; set; }
+        public bool bitLectorBiometricoSiempreEncendido { get; set; }
+        public int intMinutosNoReingresoDia { get; set; }
+    }
+}

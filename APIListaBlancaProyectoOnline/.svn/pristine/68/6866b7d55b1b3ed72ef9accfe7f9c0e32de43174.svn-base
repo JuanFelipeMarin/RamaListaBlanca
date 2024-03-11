@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Sibo.WhiteList.DAL;
+
+namespace Sibo.WhiteList.DAL.Classes
+{
+   public class ZonasDAL
+    {
+        public List<tbl_Maestro_Zonas> GetZonas(int gymId, int branchId)
+        {
+            List<tbl_Maestro_Zonas> list = new List<tbl_Maestro_Zonas>();
+
+            using (var context = new dbWhiteListModelEntities(gymId))
+            {
+                list = (from ter in context.tbl_Maestro_Zonas
+                        where ter.cdgimnasio == gymId && ter.intSucursal == branchId
+                        select ter).ToList();
+            }
+
+            return list;
+        }
+
+    }
+}

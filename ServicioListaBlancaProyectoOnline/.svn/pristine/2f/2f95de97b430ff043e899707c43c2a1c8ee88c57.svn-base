@@ -1,0 +1,69 @@
+﻿using Newtonsoft.Json;
+using Sibo.WhiteList.Service.Entities.Classes;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+
+namespace Sibo.WhiteList.Service.DAL.API
+{
+    public class EventAdicionalAPI
+    {
+        string apiRoute = "api/EntryAdicional/";
+
+        /// <summary>
+        /// Método que se comunica con la API (Entradas) y permite insertar los ingresos al gimnasio de los clientes.
+        /// Getulio Vargas - 2018-04-03 - OD 1307
+        /// </summary>
+        /// <param name="entryList"></param>
+        /// <returns></returns>
+        public bool AddEntries(List<eEvent> entryList)
+        {
+            try
+            {
+                string result = string.Empty, json = string.Empty;
+                bool res = false;
+                string url = System.Configuration.ConfigurationManager.AppSettings["urlApi"].ToString();
+                //Convertimos la lista que llega como parámetro en una lista dynamic
+                var dynamicList = new List<dynamic>();
+
+                foreach (eEvent item in entryList)
+                {
+                    dynamic dyn = item;
+                    dynamicList.Add(dyn);
+                }
+
+                //Convertimos la lista dynamic en un json
+                json = JsonConvert.SerializeObject(dynamicList);
+                var webRequest = (HttpWebRequest)WebRequest.Create(url + apiRoute);
+                webRequest.Method = "POST";
+                webRequest.ContentType = "application/json";
+
+                using (var streamWriter = new StreamWriter(webRequest.GetRequestStream()))
+                {
+                    streamWriter.Write(json);
+                    streamWriter.Flush();
+                    streamWriter.Close();
+                }
+
+                var response = webRequest.GetResponse();
+
+                if (response != null)
+                {
+                    using (var reader = new StreamReader(response.GetResponseStream()))
+                    {
+                        result = reader.ReadToEnd();
+                    }
+
+                    res = JsonConvert.DeserializeObject<bool>(result);
+                }
+
+                return res;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+    }
+}

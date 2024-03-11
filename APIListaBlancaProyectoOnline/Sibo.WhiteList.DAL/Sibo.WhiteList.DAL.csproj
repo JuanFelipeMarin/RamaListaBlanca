@@ -1,0 +1,930 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{536E4D86-4325-4263-9EE7-2C3925EE9429}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sibo.WhiteList.DAL</RootNamespace>
+    <AssemblyName>Sibo.WhiteList.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AccessControlSettingsDAL.cs" />
+    <Compile Include="Classes\ActionDAL.cs" />
+    <Compile Include="Classes\AditionalRestrictionsDAL.cs" />
+    <Compile Include="Classes\BlackListDAL.cs" />
+    <Compile Include="Classes\BranchDAL.cs" />
+    <Compile Include="Classes\BranchPlanDAL.cs" />
+    <Compile Include="Classes\ClientCardDAL.cs" />
+    <Compile Include="Classes\ClientDAL.cs" />
+    <Compile Include="Classes\ClientMessagesDAL.cs" />
+    <Compile Include="Classes\CompanyDAL.cs" />
+    <Compile Include="Classes\ConfigurationDAL.cs" />
+    <Compile Include="Classes\ConnectionDAL.cs" />
+    <Compile Include="Classes\ContractDAL.cs" />
+    <Compile Include="Classes\CourtesyDAL.cs" />
+    <Compile Include="Classes\EmployeeDAL.cs" />
+    <Compile Include="Classes\EntryDAL.cs" />
+    <Compile Include="Classes\FingerprintDAL.cs" />
+    <Compile Include="Classes\GymDAL.cs" />
+    <Compile Include="Classes\HolidayDAL.cs" />
+    <Compile Include="Classes\InvoiceDAL.cs" />
+    <Compile Include="Classes\MailServerDataDAL.cs" />
+    <Compile Include="Classes\MasterDataDAL.cs" />
+    <Compile Include="Classes\QrCodesDAL.cs" />
+    <Compile Include="Classes\ReplicaDAL.cs" />
+    <Compile Include="Classes\ReservesDAL.cs" />
+    <Compile Include="Classes\SpecialClientDAL.cs" />
+    <Compile Include="Classes\tblPlanDAL.cs" />
+    <Compile Include="Classes\TerminalDAL.cs" />
+    <Compile Include="Classes\TerminalTypeDAL.cs" />
+    <Compile Include="Classes\VisitorDAL.cs" />
+    <Compile Include="Classes\WhiteListDAL.cs" />
+    <Compile Include="Classes\ZonasDAL.cs" />
+    <Compile Include="ClientCards.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="clsConexion.cs" />
+    <Compile Include="dbWhiteListModelFN.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbWhiteListModelFN.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbWhiteListModelFN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbWhiteListModelFN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbWhiteListModelFN.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="fnClientsWithVigentPlanAndNotReserveWithSignedContract_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnClientsWithVigentPlanAndNotReserve_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnClientsWithVigentPlanAndReserveWithSignedContract_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnClientsWithVigentPlanAndReserve_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnClientsWithVigentPlanWithSignedContract_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnClientsWithVigentPlan_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnGetDatesForInvoicePreapertura_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnGetDatesForInvoice_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnIncludeClients_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnIncludeProspects_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fn_Split_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_canceledForTemperature.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_clases.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_clientes.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_clientes_especiales.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_codigosQr.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_configuracion_ingreso.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_contrato.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_detalle_contrato.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_empleados.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_entradas_adicionales.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_entradas_usuarios.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_eps.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_festivos.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_gimnasio.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_huellas.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_listanegra.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_mensajes_cliente.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_planes.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_planes_sucursal.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_planes_sucursal_ingreso.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_planes_usuario.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_planes_usuario_especiales.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_reservas.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_servidor_correo.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_sucursales.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gim_tipo_identificacion.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ConvertDataRowToEntities.cs" />
+    <Compile Include="Helpers\FuncionesGenerales.cs" />
+    <Compile Include="listarPasosRegistroWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pa_ReservasCorreoCambioHorario_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\wsSiboPawDAL\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SiboPawHelpers\dEncriptaDesdencripta.cs" />
+    <Compile Include="spAbonoModulo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spAccountTypes_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spAdditionalCashingToReport_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spAdminFeeConfiguration_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spAdministration_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spAsistenciaClientesWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpBackupdatabases_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBranch_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCambiodeNitEmpresaClientes_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCambioFechaVtoPlanTiquetesDeEntrada_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCampanasFiltroEditar_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCargarClientesTransaccionSinFactura_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCargarDatosModuloComercialVisitantes2_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCargarDatosModuloComercial_temp_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCargarRegistroActividades_Enc_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCargarVentasAnoGrafico_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCargarVentasMesGraficos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCashingsHealthCarebyClient_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClasesgrupales_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClientesconPlanesActivos_EvitaBloqueo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClientesconPlanesActivos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClientesMigracionWeb2_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClientesMigracionWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClientesParaCortesiasByIdentificacionYGym_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClientesParaCortesias_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCobrosAdicionales_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCobrosRecurrentesDebitosActivosxCliente_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConfigCodigo_Nota_Creditos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConfiguracionPTSIIGO_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConfiguration_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaClienteGrupo2_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaClienteGrupoVigente_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaClienteGrupoxCC_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaClienteGrupo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaCodigosPromocionalesCliente_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaCodigosPromocionalesReporte_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaConsecutivoDian_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultadeEmpleadosFiltro_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaFactCortClientePlan_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaFacturasCortesias_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaPlanesCompartidosFactura_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaPlanPorFactura_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarCitasCliente_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarClientePlanValidacion_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarClientePlan_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarClientesEmpleadosVisitantes_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarClientesGSW_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarClienteyReservasActivas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarDatosClase_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarDatosPlanesUsuario_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarEntradasClienteFiltro_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarGimnasios_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarHistorialCitasFiltro_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarPacientesPlanUsuarioYPUEspecial_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarReservasClases_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarRutina_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarUbicacionesClase_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarValorEmpresaRest_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultarValorPlanRest_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultar_salon_sucu_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultar_sucursal_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConsultaSucursales_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spContracts_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spContratoDetalle_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCortesiaModulo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCortesiasMigracionWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCortesiasWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCreaciondeGymSucEmp_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCreditos2_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCreditos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCurrencyEquivalenceBranch_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spDebitAccount_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spDetalleAbonado_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spDetalleCortesia_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEmpleados_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEmpresas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEquivalencias_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFacturaMigracionWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFacturaModulo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFacturas_EncabezadoP_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFacturas_Est_Esp_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFacturas_Est_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFingerprint_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spGetCharlasYSesiones_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spGetDataBlackList_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spGetEntriesByClient_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spGetPlanesByIdUser_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spGym_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spGym_User_Social_Network_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spHistoricalClinicHistory1_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spHistoricalClinicHistory_NOV_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spHuellas_replica_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spInformationGraphics_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spInformeLogPelSONDA_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spInformeMarcacionesDenegadas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spInsertarFacturasCompletas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spInterfacesContables_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spInvoices_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spInvoiceXML_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spListaBeneficiarios_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spMaestroInterfacesContables_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spMailServerData_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spNamesVentanasAppReemplazo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spNoveltyByVersion_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPaymentMethodConsolidated_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPeriodDetailBuy_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPlanesClases_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPlanesUsuario_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPreInvoice_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPrintClinicHistoryApp_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPrintClinicHistory_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProfessional_replacement_in_classes_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProfilesAllowCourtesies_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRegitroEnvioSMS_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReplicaWeb_registroEnvioImagenesGSN_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReporteContratoIndividual_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReporteContratos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRIP_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRpCampanasFiltro_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRpCuotaAdminitracion_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRpFacturasFiltroEmpresas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRpFacturasFiltro_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptAliadosCalificacion_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptAppEntries_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptCambioFechaVcto_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptCashBoxBalance_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptClientesConPlan_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptClientes_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptClientsVigentCourtesy_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptClients_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptCobrosAdicionalesMWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptCobrosAdicionales_clasificacion_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptCobrosAdicionales_Inactivo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptCortesiasXFecha_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptCourtesyXPlanXEmployee_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptDescuentosMWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptElectronicInvoicingStates_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptFacturasPorPlanPorGrupo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptFacturasXFecha_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptFacturasXPlanXEmpleado_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptHistoricClientsByPlan_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptInformePasivos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptIngresosAdicionales_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptLogsAppMobile_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptPaidCredits_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptReservas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptResumenPlanesMWeb_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptRptcuadrecaja_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptSalesTotalizedByMonth_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptTrasladoPlanes_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptVentasTotalizadoMes_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptVigencyChanges_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRptVisitantesXFecha_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSignatureRegister_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSubscriberReport_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSucursalesPorUsuarioIngreso_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSuscripcionesMP_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTerminosSistemaReemplazo_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTokenAppCliest_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTransactionLostPAYU_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTransactionLostPlaceToPay_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUser_Empleados_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUsuariosApp_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVersionByUser_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVersion_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVisits_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spWhiteListCliente_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spWhiteList_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spZonas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_AlertasInfoCliente_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_AlertasMailPorMinuto_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_CargarPlanesPorSucursal_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConsultarEstadosClientesAcademiaDeDanza_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Gym_Account_Types_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Gym_Social_Networks_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_InformeIngresoAdicional_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_InformeNotificaciones_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_InformeReferidos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Informes_Det_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Informes_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_InformeUtilidades_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_InformeVentas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ListClassessAttendance_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_LogPagos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ModComActivAutomEnviosMasivos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ModComRptClientesRetirados_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ModComRptCompromIncumplidos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ModComRptPresupuestoVentas_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ReportClassessAttendance_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ReservasClienteFactura_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Resumen_Con_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_TrainingRecord_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ValidaContratos_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ValidationAccessCodigoQr_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAction.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblActionParameters.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCitas.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblConfiguracion.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblConfiguracion_FirmaContratosAcceso.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReplicaHuellas.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReplicatedMessages.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Maestro_Zonas.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Terminal.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TerminalTypes.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_LiberarMem_Result.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Visit.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Visitors.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WhiteList.cs">
+      <DependentUpon>dbWhiteListModelFN.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="dbWhiteListModelFN.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbWhiteListModelFN.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="dbWhiteListModelFN.edmx.diagram">
+      <DependentUpon>dbWhiteListModelFN.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\wsSiboPawDAL\Sibo.WhiteList.DAL.wsSiboPawDAL.ActualizarHuellaTSWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsSiboPawDAL\Sibo.WhiteList.DAL.wsSiboPawDAL.eConnection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsSiboPawDAL\Sibo.WhiteList.DAL.wsSiboPawDAL.GuardarHuellaTSWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsSiboPawDAL\Sibo.WhiteList.DAL.wsSiboPawDAL.Roles.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsSiboPawDAL\wsSiboPaw.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sibo.WhiteList.Entities\Sibo.WhiteList.Entities.csproj">
+      <Project>{FAE8932B-0080-40CC-BCAB-96262769415C}</Project>
+      <Name>Sibo.WhiteList.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\wsSiboPawDAL\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\wsSiboPawDAL\configuration.svcinfo" />
+    <None Include="Service References\wsSiboPawDAL\configuration91.svcinfo" />
+    <None Include="Service References\wsSiboPawDAL\wsSiboPaw.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\wsSiboPawDAL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbWhiteListModelFN.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbWhiteListModelFN.edmx</DependentUpon>
+      <LastGenOutput>dbWhiteListModelFN.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="dbWhiteListModelFN.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbWhiteListModelFN.edmx</DependentUpon>
+      <LastGenOutput>dbWhiteListModelFN.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

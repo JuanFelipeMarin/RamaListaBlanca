@@ -1,0 +1,10 @@
+- Colección modificada; puede que no se ejecute la operación de enumeración.    en System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   en System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   en System.Collections.Generic.List`1.Enumerator.MoveNext()
+   en Sibo.WhiteList.Service.Classes.clsTerminal.timerGetPendingActions_Elapsed(Object sender, ElapsedEventArgs e) en D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service\Classes\clsTerminal.cs:línea 3905  (Fecha: 24/06/2020 16:53:08)
+- Colección modificada; puede que no se ejecute la operación de enumeración.    en System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   en System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   en System.Collections.Generic.List`1.Enumerator.MoveNext()
+   en Sibo.WhiteList.Service.Classes.clsTerminal.timerGetPendingActions_Elapsed(Object sender, ElapsedEventArgs e) en D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service\Classes\clsTerminal.cs:línea 3906  (Fecha: 24/06/2020 16:56:42)
+- Se excedió el tiempo de espera de la operación    en Sibo.WhiteList.Service.DAL.API.AccessControlSettingsAPI.GetAccessControlSettings(Int32 gymId, Int32 branchId) en D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\API\AccessControlSettingsAPI.cs:línea 46
+   en Sibo.WhiteList.Service.BLL.AccessControlSettingsBLL.GetAccessControlSettings(Int32 gymId, Int32 branchId) en D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.BLL\BLL\AccessControlSettingsBLL.cs:línea 30  (Fecha: 24/06/2020 16:59:47)

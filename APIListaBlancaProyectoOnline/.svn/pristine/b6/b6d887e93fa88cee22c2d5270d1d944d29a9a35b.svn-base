@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  </configSections>
+  <connectionStrings><add name="dbWhiteListModelEntities" connectionString="metadata=res://*/dbWhiteListModel.csdl|res://*/dbWhiteListModel.ssdl|res://*/dbWhiteListModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SB-DEV3;initial catalog=GSW_92;user id=sa;password=sa;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" /><add name="dbWhiteListModelEntities" connectionString="metadata=res://*/dbWhiteListModelFN.csdl|res://*/dbWhiteListModelFN.ssdl|res://*/dbWhiteListModelFN.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SB-DEV3;initial catalog=GSW_92;persist security info=True;user id=sa;password=sa;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" /></connectionStrings>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>
+  </entityFramework>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="wsSiboPawSoap" />
+      </basicHttpBinding>
+      <customBinding>
+        <binding name="wsSiboPawSoap12">
+          <textMessageEncoding messageVersion="Soap12" />
+          <httpTransport />
+        </binding>
+      </customBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://localhost/sibopaw_6/modulocomercial/wsSiboPaw.asmx" binding="basicHttpBinding" bindingConfiguration="wsSiboPawSoap" contract="wsSiboPawDAL.wsSiboPawSoap" name="wsSiboPawSoap" />
+      <endpoint address="http://localhost/sibopaw_6/modulocomercial/wsSiboPaw.asmx" binding="customBinding" bindingConfiguration="wsSiboPawSoap12" contract="wsSiboPawDAL.wsSiboPawSoap" name="wsSiboPawSoap12" />
+    </client>
+  </system.serviceModel>
+</configuration>

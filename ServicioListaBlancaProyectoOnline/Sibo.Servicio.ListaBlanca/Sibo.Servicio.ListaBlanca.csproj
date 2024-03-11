@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67F2F132-68ED-4014-8C43-A1B15C49805F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sibo.Servicio.ListaBlanca</RootNamespace>
+    <AssemblyName>Sibo.Servicio.ListaBlanca</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="HexMaster.ServiceHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HexMaster.WindowsServiceHelper.1.0.6\lib\HexMaster.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="ImagenTCAM7000, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ImagenTCAM7000.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Web.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.Web.Services.1.0.2312.88\lib\Microsoft.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Suprema.UFExtractor">
+      <HintPath>..\Sibo.WhiteList.Service\bin\Debug\Suprema.UFExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFMatcher">
+      <HintPath>..\Sibo.WhiteList.Service\bin\Debug\Suprema.UFMatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFScanner">
+      <HintPath>..\Sibo.WhiteList.Service\bin\Debug\Suprema.UFScanner.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsAccessControlSettings.cs" />
+    <Compile Include="Classes\clsAction.cs" />
+    <Compile Include="Classes\clsActionParameters.cs" />
+    <Compile Include="Classes\clsClients.cs" />
+    <Compile Include="Classes\clsEntry.cs" />
+    <Compile Include="Classes\clsFingerprint.cs" />
+    <Compile Include="Classes\clsHoliday.cs" />
+    <Compile Include="Classes\clsReplicatedFingerprint.cs" />
+    <Compile Include="Classes\clsTerminal.cs" />
+    <Compile Include="Classes\clsWhiteList.cs" />
+    <Compile Include="Classes\clsWinSockCliente.cs" />
+    <Compile Include="Classes\clsZonas.cs" />
+    <Compile Include="Connected Services\wsGSW\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptContract1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptContract.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service.ListaBlanca.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service.ListaBlanca.Designer.cs">
+      <DependentUpon>Service.ListaBlanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\wsGSW\Generic1.wsdl" />
+    <None Include="Connected Services\wsGSW\Sibo.Servicio.ListaBlanca.wsGSW.eCliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsGSW\Sibo.Servicio.ListaBlanca.wsGSW.eHuellas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsGSW\Sibo.Servicio.ListaBlanca.wsGSW.eTutorialVideo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsGSW\Sibo.Servicio.ListaBlanca.wsGSW.validatefootprintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptContract.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContract1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libComunicacionBioEntry\libComunicacionBioEntry.csproj">
+      <Project>{895C6F4D-28A9-440A-97C2-1710C161B7A1}</Project>
+      <Name>libComunicacionBioEntry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.BLL\Sibo.WhiteList.Service.BLL.csproj">
+      <Project>{97c239b8-c307-4a99-ab25-8dde342b24ef}</Project>
+      <Name>Sibo.WhiteList.Service.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.DAL\Sibo.WhiteList.Service.DAL.csproj">
+      <Project>{8dc3616d-e1ab-47f4-ae96-016adeebce51}</Project>
+      <Name>Sibo.WhiteList.Service.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.Entities\Sibo.WhiteList.Service.Entities.csproj">
+      <Project>{63cb188f-5303-4770-92ed-bde3bd9f4375}</Project>
+      <Name>Sibo.WhiteList.Service.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ImagenTCAM7000.dll" />
+    <None Include="Connected Services\wsGSW\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\wsGSW\configuration.svcinfo" />
+    <None Include="Connected Services\wsGSW\configuration91.svcinfo" />
+    <None Include="Connected Services\wsGSW\Generic1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\wsGSW\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="Sibo.WhiteList.IngresoTouch.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+  <appSettings>
+    <add key="gymId" value="92"/>
+    <add key="gymName" value="Sibo Avance la melodía"/>
+    <add key="branchId" value="6"/>
+    <add key="urlApi" value="http://localhost:63187/"/>
+    <add key="servesToOutput" value="false"/>
+    <add key="servesToInputAndOutput" value="false"/>
+    <add key="cardMode" value="false"/>
+    <add key="imprimirReservaWeb" value="true"/>
+  </appSettings>
+  <connectionStrings>
+    <!--<add name="strConnection" connectionString="Data Source=DESARROLLO02\SQLSIBO;Initial Catalog=dbWhitelist;User ID=sa;Password=sibo*123;"/>-->
+    <!--<add name="strConnection" connectionString="Data Source=SIBO-SERVER-CP;Initial Catalog=dbWhitelistGymsoft;User ID=sa;Password=Sike46fiA-DISCOVERYW2012;Connection Timeout=0;"/>-->
+
+    <!--Calidad Sebas-->
+    <add name="strConnection" connectionString="Data Source=DESKTOP-7SO3AFP\SIBOSQLSERVER;Initial Catalog=dbWhitelist;User ID=sa;Password=sasibo;Connection Timeout=0;"/>
+
+  </connectionStrings>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="WSComunicaNetVigenteSoap">
+          <security mode="Transport" />
+        </binding>
+        <binding name="WSComunicaNetVigenteSoap1" />
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="https://gymsoft.siboavance.com.co/GymsoftWeb/Webservices/WSComunicaNetVigente.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSComunicaNetVigenteSoap"
+        contract="WSComunicaNetVigente.WSComunicaNetVigenteSoap" name="WSComunicaNetVigenteSoap" />
+    </client>
+  </system.serviceModel>
+  <applicationSettings>
+    <Sibo.WhiteList.IngresoTouch.Properties.Settings>
+      <setting name="Sibo_WhiteList_IngresoTouch_WSComunicaNet_WSComunicaNetVigente"
+        serializeAs="String">
+        <value>https://pruebas.siboavance.com.co/GymsoftWeb_M4KU70/WebServices/WSComunicaNetVigente.asmx</value>
+      </setting>
+    </Sibo.WhiteList.IngresoTouch.Properties.Settings>
+  </applicationSettings>
+</configuration>

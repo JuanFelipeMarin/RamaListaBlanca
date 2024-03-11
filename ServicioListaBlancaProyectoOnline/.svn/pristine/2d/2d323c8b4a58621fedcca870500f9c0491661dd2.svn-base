@@ -1,0 +1,3 @@
+- La columna 'snTerminal' no pertenece a la tabla .    en Sibo.WhiteList.Service.DAL.Data.dTerminal.GetTerminals() en D:\Desarrollo\Gymsoft\Servicios\Service - ListaBlanca\Sibo.WhiteList.Service.DAL\Data\dTerminal.cs:línea 181
+   en Sibo.WhiteList.Service.BLL.BLL.TerminalBLL.GetTerminals() en D:\Desarrollo\Gymsoft\Servicios\Service - ListaBlanca\Sibo.WhiteList.Service.BLL\BLL\TerminalBLL.cs:línea 65  (Fecha: 5/04/2023 8:41:03 a. m.)
+- Trying to pass a table-valued parameter with 8 column(s) where the corresponding user-defined table type requires 7 column(s).  (Fecha: 5/04/2023 8:50:52 a. m.)

@@ -1,0 +1,12 @@
+- <- DATA: @T16:52:55 12/04/23$  (Fecha: 12/04/2023 4:52:56 p. m.)
+- -> DATA: @OK$
+  (Fecha: 12/04/2023 4:52:58 p. m.)
+- -> DATA: @P001000752944$
+  (Fecha: 12/04/2023 4:53:24 p. m.)
+- <- DATA: @M20MTO BALLET 2 CLASE20MTO ESTUDIANTIL ME%                                                                                                                                                                                                       $  (Fecha: 12/04/2023 4:53:28 p. m.)
+- <- DATA: @ALE QUEDAN 30 DIAS DISPONIBLES.          JUAN MESA MONSALVE                      20MTO ESTUDIANTIL ME                    VENCE: 2023/05/04   $  (Fecha: 12/04/2023 4:53:28 p. m.)
+- -> DATA: @OK$
+  (Fecha: 12/04/2023 4:53:43 p. m.)
+- -> DATA: @PLAN=02$
+  (Fecha: 12/04/2023 4:53:51 p. m.)
+- <- DATA: @DUSUARIO NO ENCONTRADO INTENTE NUEVAMENTE                                                                                                    $  (Fecha: 12/04/2023 4:54:24 p. m.)

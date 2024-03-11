@@ -1,0 +1,13 @@
+- No hay ninguna fila en la posición 0.    en System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   en System.Data.DataRowCollection.get_Item(Int32 index)
+   en Sibo.WhiteList.Service.BLL.FingerprintBLL.DownloadFingerprint(Int32 gymId, Int32 branchId, String personId) en D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.BLL\BLL\FingerprintBLL.cs:línea 161  (Fecha: 12/11/2019 9:35:40)
+- No hay ninguna fila en la posición 0.    en System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   en System.Data.DataRowCollection.get_Item(Int32 index)
+   en Sibo.WhiteList.Service.BLL.FingerprintBLL.DownloadFingerprint(Int32 gymId, Int32 branchId, String personId) en D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.BLL\BLL\FingerprintBLL.cs:línea 161  (Fecha: 12/11/2019 9:37:10)
+- No hay ninguna fila en la posición 0.    en System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   en System.Data.DataRowCollection.get_Item(Int32 index)
+   en Sibo.WhiteList.Service.BLL.FingerprintBLL.DownloadFingerprint(Int32 gymId, Int32 branchId, String personId) en D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.BLL\BLL\FingerprintBLL.cs:línea 161  (Fecha: 12/11/2019 9:43:03)
+- Error en el servidor remoto: (500) Error interno del servidor.    en Sibo.WhiteList.Service.DAL.API.FingerPrintAPI.DownloadFingerprint(Int32 gymId, Int32 branchId, String personId) en D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\API\FingerPrintAPI.cs:línea 88
+   en Sibo.WhiteList.Service.BLL.FingerprintBLL.DownloadFingerprint(Int32 gymId, Int32 branchId, String personId) en D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.BLL\BLL\FingerprintBLL.cs:línea 153  (Fecha: 12/11/2019 9:51:23)
+- Error en el servidor remoto: (500) Error interno del servidor.    en Sibo.WhiteList.Service.DAL.API.FingerPrintAPI.DownloadFingerprint(Int32 gymId, Int32 branchId, String personId) en D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\API\FingerPrintAPI.cs:línea 88
+   en Sibo.WhiteList.Service.BLL.FingerprintBLL.DownloadFingerprint(Int32 gymId, Int32 branchId, String personId) en D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.BLL\BLL\FingerprintBLL.cs:línea 153  (Fecha: 12/11/2019 10:09:37)

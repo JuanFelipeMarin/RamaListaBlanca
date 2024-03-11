@@ -1,0 +1,26 @@
+﻿using Sibo.WhiteList.DAL;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sibo.WhiteList.DAL.Classes
+{
+    public class ClientMessagesDAL
+    {
+        public List<gim_mensajes_cliente> GetClientMessages(int gymId, int branchId)
+        {
+            List<gim_mensajes_cliente> responseList = new List<gim_mensajes_cliente>();
+
+            using (var context = new dbWhiteListModelEntities(gymId))
+            {
+                responseList = (from messages in context.gim_mensajes_cliente
+                                where messages.cdgimnasio == gymId && messages.men_sucursal == branchId
+                                select messages).ToList();
+
+                return responseList;
+            }
+        }
+    }
+}

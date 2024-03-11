@@ -1,0 +1,113 @@
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojResolveAssemblyReference.cache
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\DESARROLLO\CÓDIGO APLICACIONES\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojResolveAssemblyReference.cache
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+E:\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojResolveAssemblyReference.cache
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojResolveAssemblyReference.cache
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojAssemblyReference.cache
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CoreCompileInputs.cache
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CopyComplete
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service - Bugs\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojAssemblyReference.cache
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CoreCompileInputs.cache
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CopyComplete
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojAssemblyReference.cache
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CoreCompileInputs.cache
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CopyComplete
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojAssemblyReference.cache
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CoreCompileInputs.cache
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CopyComplete
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\Service\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojAssemblyReference.cache
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CoreCompileInputs.cache
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CopyComplete
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+C:\Cosas Importantes Sebastian DEV\Proyectos\ListaBlanca_Servicio\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojAssemblyReference.cache
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CoreCompileInputs.cache
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CopyComplete
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+D:\Proyecto\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csprojAssemblyReference.cache
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CoreCompileInputs.cache
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.csproj.CopyComplete
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.dll
+C:\Proyectos\GSW\ListaBlanca\ServicioListaBlancaProyectoOnline\Sibo.WhiteList.Service.DAL\obj\Debug\Sibo.WhiteList.Service.DAL.pdb

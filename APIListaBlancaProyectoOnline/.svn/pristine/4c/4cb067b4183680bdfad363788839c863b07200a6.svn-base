@@ -1,0 +1,43 @@
+﻿using Sibo.WhiteList.BLL.Classes;
+using Sibo.WhiteList.DAL;
+using Sibo.WhiteList.Classes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Http.Description;
+
+namespace Sibo.WhiteList.Api.Controllers
+{
+    [RoutePrefix("api/ClientMessages")]
+    public class ClientMessagesController : ApiController
+    {
+        ClientMessagesBLL cm = new ClientMessagesBLL();
+
+        /// <summary>
+        /// Método encargado de consultar la lista de mensajes al cliente.
+        /// </summary>
+        /// <param name="gymId"></param>
+        /// <param name="branchId"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetClientMessages/{gymId}/{branchId}")]
+        [ResponseType(typeof(List<eClientMessages>))]
+        public async Task<IHttpActionResult> GetClientMessages(int gymId, int branchId)
+        {
+            try
+            {
+                List<eClientMessages> responseList = new List<eClientMessages>();
+                responseList = await Task.Run(() => cm.GetClientMessages(gymId, branchId));
+                return Ok(responseList);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+﻿Instalando ensamblado 'D:\Proyecto\ListaBlanca\ServicioListaBlanca\Sibo.Servicio.ListaBlanca\bin\Debug\Sibo.Servicio.ListaBlanca.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = D:\Proyecto\ListaBlanca\ServicioListaBlanca\Sibo.Servicio.ListaBlanca\bin\Debug\Sibo.Servicio.ListaBlanca.exe
+   logfile = D:\Proyecto\ListaBlanca\ServicioListaBlanca\Sibo.Servicio.ListaBlanca\bin\Debug\Sibo.Servicio.ListaBlanca.InstallLog
+Instalando el servicio Sibo_Servicio_ListaBlanca...
+El servicio Sibo_Servicio_ListaBlanca se ha instalado correctamente.
+Creando el origen de EventLog Sibo_Servicio_ListaBlanca en el registro Application...
+Confirmando ensamblado 'D:\Proyecto\ListaBlanca\ServicioListaBlanca\Sibo.Servicio.ListaBlanca\bin\Debug\Sibo.Servicio.ListaBlanca.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = D:\Proyecto\ListaBlanca\ServicioListaBlanca\Sibo.Servicio.ListaBlanca\bin\Debug\Sibo.Servicio.ListaBlanca.exe
+   logfile = D:\Proyecto\ListaBlanca\ServicioListaBlanca\Sibo.Servicio.ListaBlanca\bin\Debug\Sibo.Servicio.ListaBlanca.InstallLog

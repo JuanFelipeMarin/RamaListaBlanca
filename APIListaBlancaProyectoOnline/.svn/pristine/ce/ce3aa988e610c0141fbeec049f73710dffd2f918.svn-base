@@ -1,0 +1,27 @@
+﻿using Sibo.WhiteList.Classes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Sibo.WhiteList.DAL;
+
+namespace Sibo.WhiteList.DAL.Classes
+{
+    public class TerminalDAL
+    {
+        public List<Terminal> GetTerminals(int gymId, int branchId)
+        {
+            List<Terminal> list = new List<Terminal>();
+
+            using (var context = new dbWhiteListModelEntities(gymId))
+            {
+                list = (from ter in context.Terminal
+                        where ter.cdgimnasio == gymId && ter.ter_intBranchId == branchId
+                        select ter).ToList();
+            }
+
+            return list;
+        }
+    }
+}

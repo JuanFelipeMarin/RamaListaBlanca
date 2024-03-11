@@ -1,0 +1,1 @@
+[{"terminalId":3,"ipAddress":"192.168.10.80","servesToOutput":false,"servesToInputAndOutput":false,"timeWaitAnswerReplicate":0,"TCAM7000":true,"LectorZK":false,"ICAM7000":false,"CardMode":false,"port":"3001","speedPort":9600,"withWhiteList":false,"name":"tcam 7000","terminalTypeId":1,"terminalTypeDescription":"TCAM 7000","state":true,"snTerminal":"","Zonas":"1"}]

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DC3616D-E1AB-47F4-AE96-016ADEEBCE51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sibo.WhiteList.Service.DAL</RootNamespace>
+    <AssemblyName>Sibo.WhiteList.Service.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\AccessControlSettingsAPI.cs" />
+    <Compile Include="API\ActionAPI.cs" />
+    <Compile Include="API\ClientMessagesAPI.cs" />
+    <Compile Include="API\EmployeeAPI.cs" />
+    <Compile Include="API\EntryAPI.cs" />
+    <Compile Include="API\EventAdicionalAPI.cs" />
+    <Compile Include="API\EventAPI.cs" />
+    <Compile Include="API\FingerPrintAPI.cs" />
+    <Compile Include="API\HolidayAPI.cs" />
+    <Compile Include="API\PlanAPI.cs" />
+    <Compile Include="API\QrCodesAPI.cs" />
+    <Compile Include="API\ReplicaHuellasAPI.cs" />
+    <Compile Include="API\ReservesAPI.cs" />
+    <Compile Include="API\TerminalAPI.cs" />
+    <Compile Include="API\VisitorAPI.cs" />
+    <Compile Include="API\WhiteListAPI.cs" />
+    <Compile Include="API\WhitelistIngresoTouchMonitor.cs" />
+    <Compile Include="API\ZonaAPI.cs" />
+    <Compile Include="Connection\DataAccess.cs" />
+    <Compile Include="Data\dAccessControlSettings.cs" />
+    <Compile Include="Data\dAction.cs" />
+    <Compile Include="Data\dActionParameters.cs" />
+    <Compile Include="Data\dAdditionalEntry.cs" />
+    <Compile Include="Data\dClientCard.cs" />
+    <Compile Include="Data\dClientMessages.cs" />
+    <Compile Include="Data\dEntry.cs" />
+    <Compile Include="Data\dEvent.cs" />
+    <Compile Include="Data\dFingerprint.cs" />
+    <Compile Include="Data\dHoliday.cs" />
+    <Compile Include="Data\dReplicatedFingerprint.cs" />
+    <Compile Include="Data\dReplicatedUser.cs" />
+    <Compile Include="Data\dSchedule.cs" />
+    <Compile Include="Data\dServiceLog.cs" />
+    <Compile Include="Data\dTerminal.cs" />
+    <Compile Include="Data\dUser.cs" />
+    <Compile Include="Data\dWhiteList.cs" />
+    <Compile Include="Data\dZonas.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.Entities\Sibo.WhiteList.Service.Entities.csproj">
+      <Project>{63cb188f-5303-4770-92ed-bde3bd9f4375}</Project>
+      <Name>Sibo.WhiteList.Service.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

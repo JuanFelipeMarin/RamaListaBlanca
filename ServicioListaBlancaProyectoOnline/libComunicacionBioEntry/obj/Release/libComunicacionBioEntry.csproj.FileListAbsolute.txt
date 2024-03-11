@@ -1,0 +1,5 @@
+C:\Aplicativos\libComunicacionesSibo\libComunicacionBioEntry\bin\Release\libComunicacionBioEntry.dll
+C:\Aplicativos\libComunicacionesSibo\libComunicacionBioEntry\bin\Release\libComunicacionBioEntry.pdb
+C:\Aplicativos\libComunicacionesSibo\libComunicacionBioEntry\obj\Release\ResolveAssemblyReference.cache
+C:\Aplicativos\libComunicacionesSibo\libComunicacionBioEntry\obj\Release\libComunicacionBioEntry.dll
+C:\Aplicativos\libComunicacionesSibo\libComunicacionBioEntry\obj\Release\libComunicacionBioEntry.pdb

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A8CF260-BFD9-4807-B83A-AA238F6E43AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sibo.IngresoTouch</RootNamespace>
+    <AssemblyName>Sibo.IngresoTouch</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Suprema.UFMatcher">
+      <HintPath>..\IngresoMonitor\bin\Debug\Suprema.UFMatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFScanner">
+      <HintPath>..\IngresoMonitor\bin\Debug\Suprema.UFScanner.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsAccessControlSettings.cs" />
+    <Compile Include="Classes\clsAction.cs" />
+    <Compile Include="Classes\clsActionParameters.cs" />
+    <Compile Include="Classes\clsAdditionalEntry.cs" />
+    <Compile Include="Classes\clsConstants.cs" />
+    <Compile Include="Classes\clsFingerprint.cs" />
+    <Compile Include="Classes\clsWhiteList.cs" />
+    <Compile Include="ctrlKeyboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlKeyboard.Designer.cs">
+      <DependentUpon>ctrlKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadFingerprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadFingerprint.Designer.cs">
+      <DependentUpon>FrmDownloadFingerprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmployeeLogin.Designer.cs">
+      <DependentUpon>FrmEmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryOrExitById.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntryOrExitById.Designer.cs">
+      <DependentUpon>FrmEntryOrExitById.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngreso.Designer.cs">
+      <DependentUpon>FrmIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpenDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpenDoor.Designer.cs">
+      <DependentUpon>FrmOpenDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecordFingerprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecordFingerprint.Designer.cs">
+      <DependentUpon>FrmRecordFingerprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVisitor.Designer.cs">
+      <DependentUpon>FrmVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ctrlKeyboard.resx">
+      <DependentUpon>ctrlKeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDownloadFingerprint.resx">
+      <DependentUpon>FrmDownloadFingerprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmployeeLogin.resx">
+      <DependentUpon>FrmEmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntryOrExitById.resx">
+      <DependentUpon>FrmEntryOrExitById.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngreso.resx">
+      <DependentUpon>FrmIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpenDoor.resx">
+      <DependentUpon>FrmOpenDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecordFingerprint.resx">
+      <DependentUpon>FrmRecordFingerprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVisitor.resx">
+      <DependentUpon>FrmVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sincronizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbrirPuerta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desbloquear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botondel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BolaRoja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BolaVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gymsoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sibo_avance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botonlimpio-O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.BLL\Sibo.WhiteList.Service.BLL.csproj">
+      <Project>{97c239b8-c307-4a99-ab25-8dde342b24ef}</Project>
+      <Name>Sibo.WhiteList.Service.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.Entities\Sibo.WhiteList.Service.Entities.csproj">
+      <Project>{63cb188f-5303-4770-92ed-bde3bd9f4375}</Project>
+      <Name>Sibo.WhiteList.Service.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

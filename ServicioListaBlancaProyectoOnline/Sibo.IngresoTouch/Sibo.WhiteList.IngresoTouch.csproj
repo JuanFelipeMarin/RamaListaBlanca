@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A8CF260-BFD9-4807-B83A-AA238F6E43AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sibo.WhiteList.IngresoTouch</RootNamespace>
+    <AssemblyName>Sibo.WhiteList.IngresoTouch</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoGymSoftNet64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="libzkfpcsharp, Version=1.0.0.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\programas\ZKFinger SDK V10.0-Windows-Lite\C#\lib\x64\libzkfpcsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Suprema.UFMatcher, Version=3.7.5.1935, Culture=neutral, PublicKeyToken=48f19decc3fc5c20, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Suprema\BioMini\bin\Suprema.UFMatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFScanner, Version=3.7.5.1935, Culture=neutral, PublicKeyToken=48f19decc3fc5c20, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Suprema\BioMini\bin\Suprema.UFScanner.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Http.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Web.Http.Common.4.0.20126.16343\lib\net40\System.Web.Http.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BitmapFormat.cs" />
+    <Compile Include="Classes\clsAccessControlSettings.cs" />
+    <Compile Include="Classes\clsAction.cs" />
+    <Compile Include="Classes\clsActionParameters.cs" />
+    <Compile Include="Classes\clsAdditionalEntry.cs" />
+    <Compile Include="Classes\clsConstants.cs" />
+    <Compile Include="Classes\clsFingerprint.cs" />
+    <Compile Include="Classes\clsLectorPalma.cs" />
+    <Compile Include="Classes\clsWhiteList.cs" />
+    <Compile Include="Connected Services\WSComunicaNetVigente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\wsSiboPaw\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlKeyboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlKeyboard.Designer.cs">
+      <DependentUpon>ctrlKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbriPuerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbriPuerta.Designer.cs">
+      <DependentUpon>FrmAbriPuerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbriPuertaLoginIngresoAdicional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbriPuertaLoginIngresoAdicional.Designer.cs">
+      <DependentUpon>FrmAbriPuertaLoginIngresoAdicional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadFingerprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadFingerprint.Designer.cs">
+      <DependentUpon>FrmDownloadFingerprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmployeeLogin.Designer.cs">
+      <DependentUpon>FrmEmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryOrExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntryOrExit.Designer.cs">
+      <DependentUpon>FrmEntryOrExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryOrExitById.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntryOrExitById.Designer.cs">
+      <DependentUpon>FrmEntryOrExitById.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngreso.Designer.cs">
+      <DependentUpon>FrmIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpenDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpenDoor.Designer.cs">
+      <DependentUpon>FrmOpenDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecordFingerprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecordFingerprint.Designer.cs">
+      <DependentUpon>FrmRecordFingerprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccionarMultiplePlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeleccionarMultiplePlan.Designer.cs">
+      <DependentUpon>FrmSeleccionarMultiplePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVisitor.Designer.cs">
+      <DependentUpon>FrmVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ctrlKeyboard.resx">
+      <DependentUpon>ctrlKeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbriPuerta.resx">
+      <DependentUpon>FrmAbriPuerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbriPuertaLoginIngresoAdicional.resx">
+      <DependentUpon>FrmAbriPuertaLoginIngresoAdicional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDownloadFingerprint.resx">
+      <DependentUpon>FrmDownloadFingerprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmployeeLogin.resx">
+      <DependentUpon>FrmEmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntryOrExit.resx">
+      <DependentUpon>FrmEntryOrExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntryOrExitById.resx">
+      <DependentUpon>FrmEntryOrExitById.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngreso.resx">
+      <DependentUpon>FrmIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpenDoor.resx">
+      <DependentUpon>FrmOpenDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecordFingerprint.resx">
+      <DependentUpon>FrmRecordFingerprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccionarMultiplePlan.resx">
+      <DependentUpon>FrmSeleccionarMultiplePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVisitor.resx">
+      <DependentUpon>FrmVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bin\Debug\Sibo.IngresoTouch.exe.config" />
+    <None Include="bin\Debug\Sibo.IngresoTouch.vshost.exe.config" />
+    <None Include="bin\Debug\Sibo.IngresoTouch.vshost.exe.manifest" />
+    <None Include="bin\Debug\Sibo.WhiteList.IngresoTouch.exe.config" />
+    <None Include="bin\Debug\Sibo.WhiteList.IngresoTouch.vshost.exe.config" />
+    <None Include="bin\Debug\Sibo.WhiteList.IngresoTouch.vshost.exe.manifest" />
+    <None Include="Connected Services\WSComunicaNetVigente\WSComunicaNetVigente.wsdl" />
+    <None Include="Connected Services\wsSiboPaw\Sibo.WhiteList.IngresoTouch.wsSiboPaw.ActualizarHuellaTSWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsSiboPaw\Sibo.WhiteList.IngresoTouch.wsSiboPaw.eConnection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsSiboPaw\Sibo.WhiteList.IngresoTouch.wsSiboPaw.eResSisca.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsSiboPaw\Sibo.WhiteList.IngresoTouch.wsSiboPaw.GuardarHuellaTSWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsSiboPaw\Sibo.WhiteList.IngresoTouch.wsSiboPaw.Roles.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsSiboPaw\wsSiboPaw.wsdl" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sincronizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbrirPuerta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desbloquear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botondel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BolaRoja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BolaVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gymsoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sibo_avance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botonlimpio-O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.BLL\Sibo.WhiteList.Service.BLL.csproj">
+      <Project>{97c239b8-c307-4a99-ab25-8dde342b24ef}</Project>
+      <Name>Sibo.WhiteList.Service.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.DAL\Sibo.WhiteList.Service.DAL.csproj">
+      <Project>{8dc3616d-e1ab-47f4-ae96-016adeebce51}</Project>
+      <Name>Sibo.WhiteList.Service.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.Entities\Sibo.WhiteList.Service.Entities.csproj">
+      <Project>{63cb188f-5303-4770-92ed-bde3bd9f4375}</Project>
+      <Name>Sibo.WhiteList.Service.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportSource.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.Shared.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\Sibo.IngresoTouch.exe" />
+    <Content Include="bin\Debug\Sibo.IngresoTouch.pdb" />
+    <Content Include="bin\Debug\Sibo.IngresoTouch.vshost.exe" />
+    <Content Include="bin\Debug\Sibo.WhiteList.IngresoTouch.exe" />
+    <Content Include="bin\Debug\Sibo.WhiteList.IngresoTouch.pdb" />
+    <Content Include="bin\Debug\Sibo.WhiteList.IngresoTouch.vshost.exe" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.BLL.dll" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.BLL.pdb" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.DAL.dll" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.DAL.pdb" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.Entities.dll" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.Entities.pdb" />
+    <Content Include="bin\Debug\stdole.dll" />
+    <Content Include="bin\Debug\Suprema.UFMatcher.dll" />
+    <Content Include="bin\Debug\Suprema.UFScanner.dll" />
+    <Content Include="bin\Debug\UFMatcher.dll" />
+    <Content Include="bin\Debug\UFScanner.dll" />
+    <Content Include="bin\Debug\UFScanner_IZZIX.dll" />
+    <None Include="Connected Services\WSComunicaNetVigente\WSComunicaNetVigente.disco" />
+    <None Include="Connected Services\WSComunicaNetVigente\configuration91.svcinfo" />
+    <None Include="Connected Services\WSComunicaNetVigente\configuration.svcinfo" />
+    <None Include="Connected Services\WSComunicaNetVigente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\wsSiboPaw\wsSiboPaw.disco" />
+    <None Include="Connected Services\wsSiboPaw\configuration91.svcinfo" />
+    <None Include="Connected Services\wsSiboPaw\configuration.svcinfo" />
+    <None Include="Connected Services\wsSiboPaw\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="LogoGymSoftNet64.ico" />
+    <Content Include="Sibo.IngresoTouch.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WSComunicaNetVigente\" />
+    <WCFMetadataStorage Include="Connected Services\wsSiboPaw\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

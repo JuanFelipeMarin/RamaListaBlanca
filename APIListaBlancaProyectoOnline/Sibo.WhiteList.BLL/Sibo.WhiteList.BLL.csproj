@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72E3D750-5E4D-4492-80CD-3300EC7A4BAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sibo.WhiteList.BLL</RootNamespace>
+    <AssemblyName>Sibo.WhiteList.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFExtractor, Version=3.7.5.2015, Culture=neutral, PublicKeyToken=48f19decc3fc5c20, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Suprema.UFExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFMatcher">
+      <HintPath>..\Sibo.WhiteList.Api\bin\Suprema.UFMatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFScanner, Version=3.7.5.1935, Culture=neutral, PublicKeyToken=48f19decc3fc5c20, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Suprema.UFScanner.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AccessControlSettingsBLL.cs" />
+    <Compile Include="Classes\ActionBLL.cs" />
+    <Compile Include="Classes\AditionalRestrictionsBLL.cs" />
+    <Compile Include="Classes\BlackListBLL.cs" />
+    <Compile Include="Classes\BranchBLL.cs" />
+    <Compile Include="Classes\BranchPlanBLL.cs" />
+    <Compile Include="Classes\ClientBLL.cs" />
+    <Compile Include="Classes\ClientCardBLL.cs" />
+    <Compile Include="Classes\ClientMessagesBLL.cs" />
+    <Compile Include="Classes\ConfigurationBLL.cs" />
+    <Compile Include="Classes\ContratoBLL.cs" />
+    <Compile Include="Classes\CourtesyBLL.cs" />
+    <Compile Include="Classes\EmployeeBLL.cs" />
+    <Compile Include="Classes\EntryAdicionalBLL.cs" />
+    <Compile Include="Classes\EntryBLL.cs" />
+    <Compile Include="Classes\FingerprintBLL.cs" />
+    <Compile Include="Classes\GymBLL.cs" />
+    <Compile Include="Classes\HolidayBLL.cs" />
+    <Compile Include="Classes\InvoiceBLL.cs" />
+    <Compile Include="Classes\MailServerDataBLL.cs" />
+    <Compile Include="Classes\MasterDataBLL.cs" />
+    <Compile Include="Classes\QrCodesBLL.cs" />
+    <Compile Include="Classes\ReplicaBLL.cs" />
+    <Compile Include="Classes\ReservesBLL.cs" />
+    <Compile Include="Classes\SpecialClientBLL.cs" />
+    <Compile Include="Classes\SupremaBLL.cs" />
+    <Compile Include="Classes\tblPlanBLL.cs" />
+    <Compile Include="Classes\TerminalBLL.cs" />
+    <Compile Include="Classes\VisitorBLL.cs" />
+    <Compile Include="Classes\WhiteListBLL.cs" />
+    <Compile Include="Classes\ZonasBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Exceptions.cs" />
+    <Compile Include="Utilities\Validation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sibo.WhiteList.DAL\Sibo.WhiteList.DAL.csproj">
+      <Project>{536e4d86-4325-4263-9ee7-2c3925ee9429}</Project>
+      <Name>Sibo.WhiteList.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sibo.WhiteList.Entities\Sibo.WhiteList.Entities.csproj">
+      <Project>{fae8932b-0080-40cc-bcab-96262769415c}</Project>
+      <Name>Sibo.WhiteList.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.ApplicationInsights.Web.2.21.0\build\Microsoft.ApplicationInsights.Web.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.Web.2.21.0\build\Microsoft.ApplicationInsights.Web.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.Web.2.21.0\build\Microsoft.ApplicationInsights.Web.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.Web.2.21.0\build\Microsoft.ApplicationInsights.Web.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ccddc731be7142d4a62082e65ab38701" Name="Diagram1" ZoomLevel="46">
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_clientes" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_configuracion_ingreso" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_gimnasio" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_planes" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_planes_usuario" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_planes_usuario_especiales" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_sucursales" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.tblConfiguracion" Width="1.5" PointX="12.75" PointY="13.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_clases" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_planes_sucursal" Width="1.5" PointX="15.375" PointY="7.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_reservas" Width="1.5" PointX="15.375" PointY="12.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.WhiteList" Width="1.5" PointX="17.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_huellas" Width="1.5" PointX="17.375" PointY="10.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_clientes_especiales" Width="1.5" PointX="9.375" PointY="18.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_codigosQr" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_contrato" Width="1.5" PointX="19.375" PointY="4.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_detalle_contrato" Width="1.5" PointX="19.375" PointY="8.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_empleados" Width="1.5" PointX="15.375" PointY="20.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_entradas_usuarios" Width="1.5" PointX="21.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_eps" Width="1.5" PointX="21.375" PointY="7.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_festivos" Width="1.5" PointX="21.375" PointY="11.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_mensajes_cliente" Width="1.5" PointX="5.375" PointY="22.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_tipo_identificacion" Width="1.5" PointX="22.375" PointY="14.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.tbl_Maestro_Zonas" Width="1.5" PointX="17.375" PointY="22.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.tblConfiguracion_FirmaContratosAcceso" Width="1.5" PointX="22.375" PointY="18.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.Terminal" Width="1.5" PointX="19.625" PointY="16.125" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.TerminalTypes" Width="1.5" PointX="17.375" PointY="18.125" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.Visit" Width="1.5" PointX="19.375" PointY="22.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.Visitors" Width="1.5" PointX="22.375" PointY="21.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_entradas_adicionales" Width="1.5" PointX="23.375" PointY="0.75" />
+        <AssociationConnector Association="dbWhiteListModelFN.FK_Terminal_TerminalTypes" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.ClientCards" Width="1.5" PointX="23.375" PointY="5.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_canceledForTemperature" Width="1.5" PointX="23.375" PointY="8.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_listanegra" Width="1.5" PointX="24.375" PointY="12.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_planes_sucursal_ingreso" Width="1.5" PointX="24.375" PointY="16.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.gim_servidor_correo" Width="1.5" PointX="24.375" PointY="20.75" />
+        <EntityTypeShape EntityType="dbWhiteListModelFN.tblCitas" Width="1.5" PointX="25.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

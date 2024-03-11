@@ -1,0 +1,4143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDatosComercio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDatosComercioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDatosComercioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDebitoAutomatico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="identifi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDebitoAutomaticoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDebitoAutomaticoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuarioGSW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CredUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CredPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuarioGSWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidarUsuarioGSWResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarPlanVigente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IdEmpresaSiboPaw" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarPlanVigenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarPlanVigenteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarBarriosNETtoWEB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtBarrios">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarBarriosNETtoWEBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarBarriosNETtoWEBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarCiudadesNETtoWEB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtCiudades">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarCiudadesNETtoWEBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarCiudadesNETtoWEBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarClasesWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarClasesWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarClasesWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoClasesWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtClases">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoClasesWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarResultadoClasesWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarClienteNETtoWEB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientes">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarClienteNETtoWEBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarClienteNETtoWEBResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertarModificarRetornarClienteWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarClienteWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarClienteWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoClienteWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listaClientes" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoClienteWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarResultadoClienteWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambioIdentificacionCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idsucursal" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="indentificacionusuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIdentificacionVieja" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIdentificacionNueva" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambioIdentificacionClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CambioIdentificacionClienteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarEstadoTiqueteImpresoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idReserva" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarEstadoTiqueteImpresoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CambiarEstadoTiqueteImpresoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarEstadoTiqueteAsistenciaNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idReserva" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idGimnasio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="estado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarEstadoTiqueteAsistenciaNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CambiarEstadoTiqueteAsistenciaNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarClientesExtra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientesExtra">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarClientesExtraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarClientesExtraResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarCobrosAdicionales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CobrosAdicionales">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarCobrosAdicionalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarCobrosAdicionalesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarContratos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contratos">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarContratosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarContratosResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertarModificarRetornarComoSupo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Comosupo">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarComoSupoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarComoSupoResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDepartamentos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Departamentos">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDepartamentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarDepartamentosResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDianNETtoWEB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Dian">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDianNETtoWEBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarDianNETtoWEBResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDianWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDianWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarDianWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoDianWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listaDIAN" type="tns:ArrayOfInt" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoDianWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarResultadoDianWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarEmpresasClientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresasClientes">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarEmpresasClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarEmpresasClientesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesEmpresasClientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanesEmpresasClie">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesEmpresasClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarPlanesEmpresasClientesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarEmpleados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empleados">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarEmpleadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarEmpleadosResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarEPS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EPS">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarEPSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarEPSResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarEstratos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Estratos">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarEstratosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarEstratosResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDetalleFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DetalleFactura">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDetalleFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarDetalleFacturaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDetalleFacturaNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DetalleFactura">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarDetalleFacturaNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarDetalleFacturaNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornarDetalleFacturaModificadosGSWToGSW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idGimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornarDetalleFacturaModificadosGSWToGSWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornarDetalleFacturaModificadosGSWToGSWResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarEstadoDetalleFacturaGSW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtDetalleFacturaModificadas">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idGimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarEstadoDetalleFacturaGSWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cambiarEstadoDetalleFacturaGSWResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarCobroFacturaNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtCobroFactura">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarCobroFacturaNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarCobroFacturaNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornarCobroFacturaModificadosGSWToGSW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idGimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornarCobroFacturaModificadosGSWToGSWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornarCobroFacturaModificadosGSWToGSWResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarEstadoCobroFacturaGSW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtCobroFacturaModificadas">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idGimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarEstadoCobroFacturaGSWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cambiarEstadoCobroFacturaGSWResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarFormasDePago">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FormasPago">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarFormasDePagoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarFormasDePagoResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarGrupos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Grupos">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarGruposResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarGruposResult" type="tns:ArrayOfDouble" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDouble">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="double" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertarModificarRetornarHobbies">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Hobbies">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarHobbiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarHobbiesResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarHorariosClasesWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarHorariosClasesWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarHorariosClasesWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoHorariosClasesWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtHorarioClases">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoHorariosClasesWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarResultadoHorariosClasesWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarIngresos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ingresos">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarIngresosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarIngresosResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarMEDPrepa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MedPrepa">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarMEDPrepaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarMEDPrepaResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarMediodeTransp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MedioTransp">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarMediodeTranspResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarMediodeTranspResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarMegas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Megas">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarMegasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarMegasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarPasosRegistroNETtoWEB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtPasosRegistro">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarPasosRegistroNETtoWEBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarPasosRegistroNETtoWEBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPasosRegistroWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPasosRegistroWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarPasosRegistroWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoPasosRegistroWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtPasosRegistro">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoPasosRegistroWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarResultadoPasosRegistroWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPelTransaccionWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idsucursal" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPelTransaccionWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarPelTransaccionWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoPelTransaccionesWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtPeltransaccion">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoPelTransaccionesWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarResultadoPelTransaccionesWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPelDetalleTransaccionWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPelDetalleTransaccionWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarPelDetalleTransaccionWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtPelDetalletransaccion">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Planes">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarPlanesResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesAdicionales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanesAdicionales">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesAdicionalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarPlanesAdicionalesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesSucursal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanesSucursales">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesSucursalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarPlanesSucursalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesSucursalIng">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanesSucursales">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesSucursalIngResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarPlanesSucursalIngResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarPlanesUsuarioNETtoWEB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtPlanesUsuario">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarPlanesUsuarioNETtoWEBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarPlanesUsuarioNETtoWEBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarPlanesUsuarioNETtoWEBDataTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtPlanesUsuario">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarPlanesUsuarioNETtoWEBDataTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarPlanesUsuarioNETtoWEBDataTableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_PlanesUsuarioModificadosWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_PlanesUsuarioModificadosWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consultar_PlanesUsuarioModificadosWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarEstadoPlanesUsuarioWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtProcesados">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarEstadoPlanesUsuarioWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CambiarEstadoPlanesUsuarioWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesUsuariosEspeciales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlusuEsp">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesUsuariosEspecialesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarPlanesUsuariosEspecialesResult" type="tns:ArrayOfDouble" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesUsuariosEspecialesDT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlusuEsp">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarPlanesUsuariosEspecialesDTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarPlanesUsuariosEspecialesDTResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornarPlanesUsuarioEspecialesModificados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornarPlanesUsuarioEspecialesModificadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornarPlanesUsuarioEspecialesModificadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarEstadoPlanesUsuarioEspecialesWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtProcesados">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarEstadoPlanesUsuarioEspecialesWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CambiarEstadoPlanesUsuarioEspecialesWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarProfesiones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Profesiones">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarProfesionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarProfesionesResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarReservasClienteTiqueteNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cdusuario" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sucursal" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarReservasClienteTiqueteNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarReservasClienteTiqueteNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarReservasClienteTiqueteNET2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cdusuario" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sucursal" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarReservasClienteTiqueteNET2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarReservasClienteTiqueteNET2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarReserva">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdhorario_clase" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaclase" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intensidad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="megas" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="megasDisponibles" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ubicacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarReservaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarReservaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarReservaOld">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdhorario_clase" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaclase" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intensidad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="megas" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="megasDisponibles" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ubicacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarReservaOldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarReservaOldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarClases">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idGimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarClasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarClasesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarHorarios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdclase" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarHorariosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarHorariosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarReservasWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarReservasWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarReservasWEBtoNETResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoReservasWEBtoNET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtReserva">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarResultadoReservasWEBtoNETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarModificarRetornarResultadoReservasWEBtoNETResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarSexos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Sexos">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarSexosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarSexosResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarSubgrupos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Subgrupos">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarSubgruposResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarSubgruposResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornaSucursales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sucursales">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornaSucursalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornaSucursalesResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarTipoIDs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoIDs">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarModificarRetornarTipoIDsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarModificarRetornarTipoIDsResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarInformacionPaciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idEmpresa" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarInformacionPacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarInformacionPacienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarFechaCobroRecurrente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nuevaFecha" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarFechaCobroRecurrenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CambiarFechaCobroRecurrenteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarFechaCobroRecurrente1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nuevaFecha" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarFechaCobroRecurrente1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CambiarFechaCobroRecurrente1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecurrenceByClientByGym">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gymId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecurrenceByClientByGymResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetRecurrenceByClientByGymResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelRecurrence">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gymId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="employeeId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelRecurrenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CancelRecurrenceResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="generateCodeChangePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cli_identifi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="generateCodeChangePasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="generateCodeChangePasswordResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="saveUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cli_identifi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cli_mail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cli_nombres" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="saveUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="saveUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDatosComercioSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDatosComercio" />
+  </wsdl:message>
+  <wsdl:message name="GetDatosComercioSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDatosComercioResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDebitoAutomaticoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDebitoAutomatico" />
+  </wsdl:message>
+  <wsdl:message name="GetDebitoAutomaticoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDebitoAutomaticoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioGSWSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioGSW" />
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioGSWSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioGSWResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlanVigenteSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarPlanVigente" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlanVigenteSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarPlanVigenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarBarriosNETtoWEBSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarBarriosNETtoWEB" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarBarriosNETtoWEBSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarBarriosNETtoWEBResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarCiudadesNETtoWEBSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarCiudadesNETtoWEB" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarCiudadesNETtoWEBSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarCiudadesNETtoWEBResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarClasesWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarClasesWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarClasesWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarClasesWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoClasesWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoClasesWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoClasesWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoClasesWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarClienteNETtoWEBSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarClienteNETtoWEB" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarClienteNETtoWEBSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarClienteNETtoWEBResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarClienteWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarClienteWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarClienteWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarClienteWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoClienteWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoClienteWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoClienteWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoClienteWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambioIdentificacionClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:CambioIdentificacionCliente" />
+  </wsdl:message>
+  <wsdl:message name="CambioIdentificacionClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:CambioIdentificacionClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoTiqueteImpresoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarEstadoTiqueteImpresoNET" />
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoTiqueteImpresoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarEstadoTiqueteImpresoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoTiqueteAsistenciaNETSoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarEstadoTiqueteAsistenciaNET" />
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoTiqueteAsistenciaNETSoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarEstadoTiqueteAsistenciaNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarClientesExtraSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarClientesExtra" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarClientesExtraSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarClientesExtraResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarCobrosAdicionalesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarCobrosAdicionales" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarCobrosAdicionalesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarCobrosAdicionalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarContratosSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarContratos" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarContratosSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarContratosResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarComoSupoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarComoSupo" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarComoSupoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarComoSupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDepartamentosSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDepartamentos" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDepartamentosSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDepartamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDianNETtoWEBSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDianNETtoWEB" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDianNETtoWEBSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDianNETtoWEBResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDianWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDianWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDianWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDianWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoDianWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoDianWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoDianWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoDianWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarEmpresasClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarEmpresasClientes" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarEmpresasClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarEmpresasClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesEmpresasClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesEmpresasClientes" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesEmpresasClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesEmpresasClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarEmpleadosSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarEmpleados" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarEmpleadosSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarEmpleadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarEPSSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarEPS" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarEPSSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarEPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarEstratosSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarEstratos" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarEstratosSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarEstratosResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDetalleFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDetalleFactura" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDetalleFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDetalleFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDetalleFacturaNewSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDetalleFacturaNew" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarDetalleFacturaNewSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarDetalleFacturaNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarDetalleFacturaModificadosGSWToGSWSoapIn">
+    <wsdl:part name="parameters" element="tns:retornarDetalleFacturaModificadosGSWToGSW" />
+  </wsdl:message>
+  <wsdl:message name="retornarDetalleFacturaModificadosGSWToGSWSoapOut">
+    <wsdl:part name="parameters" element="tns:retornarDetalleFacturaModificadosGSWToGSWResponse" />
+  </wsdl:message>
+  <wsdl:message name="cambiarEstadoDetalleFacturaGSWSoapIn">
+    <wsdl:part name="parameters" element="tns:cambiarEstadoDetalleFacturaGSW" />
+  </wsdl:message>
+  <wsdl:message name="cambiarEstadoDetalleFacturaGSWSoapOut">
+    <wsdl:part name="parameters" element="tns:cambiarEstadoDetalleFacturaGSWResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarCobroFacturaNewSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarCobroFacturaNew" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarCobroFacturaNewSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarCobroFacturaNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarCobroFacturaModificadosGSWToGSWSoapIn">
+    <wsdl:part name="parameters" element="tns:retornarCobroFacturaModificadosGSWToGSW" />
+  </wsdl:message>
+  <wsdl:message name="retornarCobroFacturaModificadosGSWToGSWSoapOut">
+    <wsdl:part name="parameters" element="tns:retornarCobroFacturaModificadosGSWToGSWResponse" />
+  </wsdl:message>
+  <wsdl:message name="cambiarEstadoCobroFacturaGSWSoapIn">
+    <wsdl:part name="parameters" element="tns:cambiarEstadoCobroFacturaGSW" />
+  </wsdl:message>
+  <wsdl:message name="cambiarEstadoCobroFacturaGSWSoapOut">
+    <wsdl:part name="parameters" element="tns:cambiarEstadoCobroFacturaGSWResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarFormasDePagoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarFormasDePago" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarFormasDePagoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarFormasDePagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarGruposSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarGrupos" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarGruposSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarGruposResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarHobbiesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarHobbies" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarHobbiesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarHobbiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarHorariosClasesWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarHorariosClasesWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarHorariosClasesWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarHorariosClasesWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoHorariosClasesWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoHorariosClasesWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoHorariosClasesWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoHorariosClasesWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarIngresosSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarIngresos" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarIngresosSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarIngresosResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarMEDPrepaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarMEDPrepa" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarMEDPrepaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarMEDPrepaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarMediodeTranspSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarMediodeTransp" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarMediodeTranspSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarMediodeTranspResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarMegasSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarMegas" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarMegasSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarMegasResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarPasosRegistroNETtoWEBSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarPasosRegistroNETtoWEB" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarPasosRegistroNETtoWEBSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarPasosRegistroNETtoWEBResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPasosRegistroWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPasosRegistroWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPasosRegistroWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPasosRegistroWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoPasosRegistroWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoPasosRegistroWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoPasosRegistroWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoPasosRegistroWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPelTransaccionWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPelTransaccionWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPelTransaccionWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPelTransaccionWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoPelTransaccionesWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoPelTransaccionesWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoPelTransaccionesWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoPelTransaccionesWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPelDetalleTransaccionWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPelDetalleTransaccionWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPelDetalleTransaccionWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPelDetalleTransaccionWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanes" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesAdicionalesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesAdicionales" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesAdicionalesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesAdicionalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesSucursalSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesSucursal" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesSucursalSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesSucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesSucursalIngSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesSucursalIng" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesSucursalIngSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesSucursalIngResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarPlanesUsuarioNETtoWEBSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarPlanesUsuarioNETtoWEB" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarPlanesUsuarioNETtoWEBSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarPlanesUsuarioNETtoWEBResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarPlanesUsuarioNETtoWEBDataTableSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarPlanesUsuarioNETtoWEBDataTable" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarPlanesUsuarioNETtoWEBDataTableSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarPlanesUsuarioNETtoWEBDataTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_PlanesUsuarioModificadosWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar_PlanesUsuarioModificadosWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_PlanesUsuarioModificadosWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:Consultar_PlanesUsuarioModificadosWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoPlanesUsuarioWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarEstadoPlanesUsuarioWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoPlanesUsuarioWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarEstadoPlanesUsuarioWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesUsuariosEspecialesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesUsuariosEspeciales" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesUsuariosEspecialesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesUsuariosEspecialesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesUsuariosEspecialesDTSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesUsuariosEspecialesDT" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarPlanesUsuariosEspecialesDTSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarPlanesUsuariosEspecialesDTResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarPlanesUsuarioEspecialesModificadosSoapIn">
+    <wsdl:part name="parameters" element="tns:retornarPlanesUsuarioEspecialesModificados" />
+  </wsdl:message>
+  <wsdl:message name="retornarPlanesUsuarioEspecialesModificadosSoapOut">
+    <wsdl:part name="parameters" element="tns:retornarPlanesUsuarioEspecialesModificadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoPlanesUsuarioEspecialesWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarEstadoPlanesUsuarioEspecialesWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoPlanesUsuarioEspecialesWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarEstadoPlanesUsuarioEspecialesWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarProfesionesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarProfesiones" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarProfesionesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarProfesionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarReservasClienteTiqueteNETSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarReservasClienteTiqueteNET" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarReservasClienteTiqueteNETSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarReservasClienteTiqueteNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarReservasClienteTiqueteNET2SoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarReservasClienteTiqueteNET2" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarReservasClienteTiqueteNET2SoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarReservasClienteTiqueteNET2Response" />
+  </wsdl:message>
+  <wsdl:message name="InsertarReservaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarReserva" />
+  </wsdl:message>
+  <wsdl:message name="InsertarReservaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarReservaOldSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarReservaOld" />
+  </wsdl:message>
+  <wsdl:message name="InsertarReservaOldSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarReservaOldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarClasesSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarClases" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarClasesSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarClasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarHorariosSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarHorarios" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarHorariosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarHorariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarReservasWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarReservasWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarReservasWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarReservasWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoReservasWEBtoNETSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoReservasWEBtoNET" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarResultadoReservasWEBtoNETSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarResultadoReservasWEBtoNETResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarSexosSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarSexos" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarSexosSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarSexosResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarSubgruposSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarSubgrupos" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarSubgruposSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarSubgruposResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornaSucursalesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornaSucursales" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornaSucursalesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornaSucursalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarTipoIDsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarTipoIDs" />
+  </wsdl:message>
+  <wsdl:message name="InsertarModificarRetornarTipoIDsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarModificarRetornarTipoIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarInformacionPacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarInformacionPaciente" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarInformacionPacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarInformacionPacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarFechaCobroRecurrenteSoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarFechaCobroRecurrente" />
+  </wsdl:message>
+  <wsdl:message name="CambiarFechaCobroRecurrenteSoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarFechaCobroRecurrenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarFechaCobroRecurrente1SoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarFechaCobroRecurrente1" />
+  </wsdl:message>
+  <wsdl:message name="CambiarFechaCobroRecurrente1SoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarFechaCobroRecurrente1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetRecurrenceByClientByGymSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecurrenceByClientByGym" />
+  </wsdl:message>
+  <wsdl:message name="GetRecurrenceByClientByGymSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecurrenceByClientByGymResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelRecurrenceSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelRecurrence" />
+  </wsdl:message>
+  <wsdl:message name="CancelRecurrenceSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelRecurrenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="generateCodeChangePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:generateCodeChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="generateCodeChangePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:generateCodeChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveUserSoapIn">
+    <wsdl:part name="parameters" element="tns:saveUser" />
+  </wsdl:message>
+  <wsdl:message name="saveUserSoapOut">
+    <wsdl:part name="parameters" element="tns:saveUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSComunicaNetVigenteSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatosComercio">
+      <wsdl:input message="tns:GetDatosComercioSoapIn" />
+      <wsdl:output message="tns:GetDatosComercioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitoAutomatico">
+      <wsdl:input message="tns:GetDebitoAutomaticoSoapIn" />
+      <wsdl:output message="tns:GetDebitoAutomaticoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuarioGSW">
+      <wsdl:input message="tns:ValidarUsuarioGSWSoapIn" />
+      <wsdl:output message="tns:ValidarUsuarioGSWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlanVigente">
+      <wsdl:input message="tns:ConsultarPlanVigenteSoapIn" />
+      <wsdl:output message="tns:ConsultarPlanVigenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarBarriosNETtoWEB">
+      <wsdl:input message="tns:InsertarModificarBarriosNETtoWEBSoapIn" />
+      <wsdl:output message="tns:InsertarModificarBarriosNETtoWEBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarCiudadesNETtoWEB">
+      <wsdl:input message="tns:InsertarModificarCiudadesNETtoWEBSoapIn" />
+      <wsdl:output message="tns:InsertarModificarCiudadesNETtoWEBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClasesWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarClasesWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarClasesWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoClasesWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarResultadoClasesWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarResultadoClasesWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClienteNETtoWEB">
+      <wsdl:input message="tns:InsertarModificarRetornarClienteNETtoWEBSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarClienteNETtoWEBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClienteWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarClienteWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarClienteWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoClienteWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarResultadoClienteWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarResultadoClienteWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambioIdentificacionCliente">
+      <wsdl:input message="tns:CambioIdentificacionClienteSoapIn" />
+      <wsdl:output message="tns:CambioIdentificacionClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoTiqueteImpresoNET">
+      <wsdl:input message="tns:CambiarEstadoTiqueteImpresoNETSoapIn" />
+      <wsdl:output message="tns:CambiarEstadoTiqueteImpresoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoTiqueteAsistenciaNET">
+      <wsdl:input message="tns:CambiarEstadoTiqueteAsistenciaNETSoapIn" />
+      <wsdl:output message="tns:CambiarEstadoTiqueteAsistenciaNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClientesExtra">
+      <wsdl:input message="tns:InsertarModificarRetornarClientesExtraSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarClientesExtraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarCobrosAdicionales">
+      <wsdl:input message="tns:InsertarModificarRetornarCobrosAdicionalesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarCobrosAdicionalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarContratos">
+      <wsdl:input message="tns:InsertarModificarRetornarContratosSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarContratosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarComoSupo">
+      <wsdl:input message="tns:InsertarModificarRetornarComoSupoSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarComoSupoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDepartamentos">
+      <wsdl:input message="tns:InsertarModificarRetornarDepartamentosSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarDepartamentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDianNETtoWEB">
+      <wsdl:input message="tns:InsertarModificarRetornarDianNETtoWEBSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarDianNETtoWEBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDianWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarDianWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarDianWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoDianWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarResultadoDianWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarResultadoDianWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEmpresasClientes">
+      <wsdl:input message="tns:InsertarModificarRetornarEmpresasClientesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarEmpresasClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesEmpresasClientes">
+      <wsdl:input message="tns:InsertarModificarRetornarPlanesEmpresasClientesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPlanesEmpresasClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEmpleados">
+      <wsdl:input message="tns:InsertarModificarRetornarEmpleadosSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarEmpleadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEPS">
+      <wsdl:input message="tns:InsertarModificarRetornarEPSSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarEPSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEstratos">
+      <wsdl:input message="tns:InsertarModificarRetornarEstratosSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarEstratosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDetalleFactura">
+      <wsdl:input message="tns:InsertarModificarRetornarDetalleFacturaSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarDetalleFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDetalleFacturaNew">
+      <wsdl:input message="tns:InsertarModificarRetornarDetalleFacturaNewSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarDetalleFacturaNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleFacturaModificadosGSWToGSW">
+      <wsdl:input message="tns:retornarDetalleFacturaModificadosGSWToGSWSoapIn" />
+      <wsdl:output message="tns:retornarDetalleFacturaModificadosGSWToGSWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cambiarEstadoDetalleFacturaGSW">
+      <wsdl:input message="tns:cambiarEstadoDetalleFacturaGSWSoapIn" />
+      <wsdl:output message="tns:cambiarEstadoDetalleFacturaGSWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarCobroFacturaNew">
+      <wsdl:input message="tns:InsertarModificarRetornarCobroFacturaNewSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarCobroFacturaNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarCobroFacturaModificadosGSWToGSW">
+      <wsdl:input message="tns:retornarCobroFacturaModificadosGSWToGSWSoapIn" />
+      <wsdl:output message="tns:retornarCobroFacturaModificadosGSWToGSWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cambiarEstadoCobroFacturaGSW">
+      <wsdl:input message="tns:cambiarEstadoCobroFacturaGSWSoapIn" />
+      <wsdl:output message="tns:cambiarEstadoCobroFacturaGSWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarFormasDePago">
+      <wsdl:input message="tns:InsertarModificarRetornarFormasDePagoSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarFormasDePagoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarGrupos">
+      <wsdl:input message="tns:InsertarModificarRetornarGruposSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarGruposSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarHobbies">
+      <wsdl:input message="tns:InsertarModificarRetornarHobbiesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarHobbiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarHorariosClasesWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarHorariosClasesWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarHorariosClasesWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoHorariosClasesWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarResultadoHorariosClasesWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarResultadoHorariosClasesWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarIngresos">
+      <wsdl:input message="tns:InsertarModificarRetornarIngresosSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarIngresosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMEDPrepa">
+      <wsdl:input message="tns:InsertarModificarRetornarMEDPrepaSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarMEDPrepaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMediodeTransp">
+      <wsdl:input message="tns:InsertarModificarRetornarMediodeTranspSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarMediodeTranspSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMegas">
+      <wsdl:input message="tns:InsertarModificarRetornarMegasSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarMegasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPasosRegistroNETtoWEB">
+      <wsdl:input message="tns:InsertarModificarPasosRegistroNETtoWEBSoapIn" />
+      <wsdl:output message="tns:InsertarModificarPasosRegistroNETtoWEBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPasosRegistroWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarPasosRegistroWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPasosRegistroWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPasosRegistroWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarResultadoPasosRegistroWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarResultadoPasosRegistroWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPelTransaccionWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarPelTransaccionWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPelTransaccionWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPelTransaccionesWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarResultadoPelTransaccionesWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarResultadoPelTransaccionesWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPelDetalleTransaccionWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarPelDetalleTransaccionWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPelDetalleTransaccionWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanes">
+      <wsdl:input message="tns:InsertarModificarRetornarPlanesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPlanesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesAdicionales">
+      <wsdl:input message="tns:InsertarModificarRetornarPlanesAdicionalesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPlanesAdicionalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesSucursal">
+      <wsdl:input message="tns:InsertarModificarRetornarPlanesSucursalSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPlanesSucursalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesSucursalIng">
+      <wsdl:input message="tns:InsertarModificarRetornarPlanesSucursalIngSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPlanesSucursalIngSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPlanesUsuarioNETtoWEB">
+      <wsdl:input message="tns:InsertarModificarPlanesUsuarioNETtoWEBSoapIn" />
+      <wsdl:output message="tns:InsertarModificarPlanesUsuarioNETtoWEBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPlanesUsuarioNETtoWEBDataTable">
+      <wsdl:input message="tns:InsertarModificarPlanesUsuarioNETtoWEBDataTableSoapIn" />
+      <wsdl:output message="tns:InsertarModificarPlanesUsuarioNETtoWEBDataTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_PlanesUsuarioModificadosWEBtoNET">
+      <wsdl:input message="tns:Consultar_PlanesUsuarioModificadosWEBtoNETSoapIn" />
+      <wsdl:output message="tns:Consultar_PlanesUsuarioModificadosWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoPlanesUsuarioWEBtoNET">
+      <wsdl:input message="tns:CambiarEstadoPlanesUsuarioWEBtoNETSoapIn" />
+      <wsdl:output message="tns:CambiarEstadoPlanesUsuarioWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesUsuariosEspeciales">
+      <wsdl:input message="tns:InsertarModificarRetornarPlanesUsuariosEspecialesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPlanesUsuariosEspecialesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesUsuariosEspecialesDT">
+      <wsdl:input message="tns:InsertarModificarRetornarPlanesUsuariosEspecialesDTSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarPlanesUsuariosEspecialesDTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarPlanesUsuarioEspecialesModificados">
+      <wsdl:input message="tns:retornarPlanesUsuarioEspecialesModificadosSoapIn" />
+      <wsdl:output message="tns:retornarPlanesUsuarioEspecialesModificadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoPlanesUsuarioEspecialesWEBtoNET">
+      <wsdl:input message="tns:CambiarEstadoPlanesUsuarioEspecialesWEBtoNETSoapIn" />
+      <wsdl:output message="tns:CambiarEstadoPlanesUsuarioEspecialesWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarProfesiones">
+      <wsdl:input message="tns:InsertarModificarRetornarProfesionesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarProfesionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarReservasClienteTiqueteNET">
+      <wsdl:input message="tns:ConsultarReservasClienteTiqueteNETSoapIn" />
+      <wsdl:output message="tns:ConsultarReservasClienteTiqueteNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarReservasClienteTiqueteNET2">
+      <wsdl:input message="tns:ConsultarReservasClienteTiqueteNET2SoapIn" />
+      <wsdl:output message="tns:ConsultarReservasClienteTiqueteNET2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarReserva">
+      <wsdl:input message="tns:InsertarReservaSoapIn" />
+      <wsdl:output message="tns:InsertarReservaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarReservaOld">
+      <wsdl:input message="tns:InsertarReservaOldSoapIn" />
+      <wsdl:output message="tns:InsertarReservaOldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarClases">
+      <wsdl:input message="tns:ConsultarClasesSoapIn" />
+      <wsdl:output message="tns:ConsultarClasesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarHorarios">
+      <wsdl:input message="tns:ConsultarHorariosSoapIn" />
+      <wsdl:output message="tns:ConsultarHorariosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarReservasWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarReservasWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarReservasWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoReservasWEBtoNET">
+      <wsdl:input message="tns:InsertarModificarRetornarResultadoReservasWEBtoNETSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarResultadoReservasWEBtoNETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarSexos">
+      <wsdl:input message="tns:InsertarModificarRetornarSexosSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarSexosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarSubgrupos">
+      <wsdl:input message="tns:InsertarModificarRetornarSubgruposSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarSubgruposSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornaSucursales">
+      <wsdl:input message="tns:InsertarModificarRetornaSucursalesSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornaSucursalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarTipoIDs">
+      <wsdl:input message="tns:InsertarModificarRetornarTipoIDsSoapIn" />
+      <wsdl:output message="tns:InsertarModificarRetornarTipoIDsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInformacionPaciente">
+      <wsdl:input message="tns:ConsultarInformacionPacienteSoapIn" />
+      <wsdl:output message="tns:ConsultarInformacionPacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarFechaCobroRecurrente">
+      <wsdl:input message="tns:CambiarFechaCobroRecurrenteSoapIn" />
+      <wsdl:output message="tns:CambiarFechaCobroRecurrenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarFechaCobroRecurrente1">
+      <wsdl:input message="tns:CambiarFechaCobroRecurrente1SoapIn" />
+      <wsdl:output message="tns:CambiarFechaCobroRecurrente1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecurrenceByClientByGym">
+      <wsdl:input message="tns:GetRecurrenceByClientByGymSoapIn" />
+      <wsdl:output message="tns:GetRecurrenceByClientByGymSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelRecurrence">
+      <wsdl:input message="tns:CancelRecurrenceSoapIn" />
+      <wsdl:output message="tns:CancelRecurrenceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="generateCodeChangePassword">
+      <wsdl:input message="tns:generateCodeChangePasswordSoapIn" />
+      <wsdl:output message="tns:generateCodeChangePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="saveUser">
+      <wsdl:input message="tns:saveUserSoapIn" />
+      <wsdl:output message="tns:saveUserSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSComunicaNetVigenteSoap" type="tns:WSComunicaNetVigenteSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatosComercio">
+      <soap:operation soapAction="http://tempuri.org/GetDatosComercio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitoAutomatico">
+      <soap:operation soapAction="http://tempuri.org/GetDebitoAutomatico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuarioGSW">
+      <soap:operation soapAction="http://tempuri.org/ValidarUsuarioGSW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlanVigente">
+      <soap:operation soapAction="http://tempuri.org/ConsultarPlanVigente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarBarriosNETtoWEB">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarBarriosNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarCiudadesNETtoWEB">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarCiudadesNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClasesWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarClasesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoClasesWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoClasesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClienteNETtoWEB">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarClienteNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClienteWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarClienteWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoClienteWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoClienteWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambioIdentificacionCliente">
+      <soap:operation soapAction="http://tempuri.org/CambioIdentificacionCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoTiqueteImpresoNET">
+      <soap:operation soapAction="http://tempuri.org/CambiarEstadoTiqueteImpresoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoTiqueteAsistenciaNET">
+      <soap:operation soapAction="http://tempuri.org/CambiarEstadoTiqueteAsistenciaNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClientesExtra">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarClientesExtra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarCobrosAdicionales">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarCobrosAdicionales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarContratos">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarContratos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarComoSupo">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarComoSupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDepartamentos">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarDepartamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDianNETtoWEB">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarDianNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDianWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarDianWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoDianWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoDianWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEmpresasClientes">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarEmpresasClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesEmpresasClientes">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesEmpresasClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEmpleados">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarEmpleados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEPS">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarEPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEstratos">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarEstratos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDetalleFactura">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDetalleFacturaNew">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarDetalleFacturaNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleFacturaModificadosGSWToGSW">
+      <soap:operation soapAction="http://tempuri.org/retornarDetalleFacturaModificadosGSWToGSW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarEstadoDetalleFacturaGSW">
+      <soap:operation soapAction="http://tempuri.org/cambiarEstadoDetalleFacturaGSW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarCobroFacturaNew">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarCobroFacturaNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarCobroFacturaModificadosGSWToGSW">
+      <soap:operation soapAction="http://tempuri.org/retornarCobroFacturaModificadosGSWToGSW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarEstadoCobroFacturaGSW">
+      <soap:operation soapAction="http://tempuri.org/cambiarEstadoCobroFacturaGSW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarFormasDePago">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarFormasDePago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarGrupos">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarGrupos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarHobbies">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarHobbies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarHorariosClasesWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarHorariosClasesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoHorariosClasesWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoHorariosClasesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarIngresos">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarIngresos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMEDPrepa">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarMEDPrepa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMediodeTransp">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarMediodeTransp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMegas">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarMegas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPasosRegistroNETtoWEB">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarPasosRegistroNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPasosRegistroWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPasosRegistroWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPasosRegistroWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoPasosRegistroWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPelTransaccionWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPelTransaccionWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPelTransaccionesWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoPelTransaccionesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPelDetalleTransaccionWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPelDetalleTransaccionWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanes">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesAdicionales">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesAdicionales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesSucursal">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesSucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesSucursalIng">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesSucursalIng" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPlanesUsuarioNETtoWEB">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarPlanesUsuarioNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPlanesUsuarioNETtoWEBDataTable">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarPlanesUsuarioNETtoWEBDataTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_PlanesUsuarioModificadosWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/Consultar_PlanesUsuarioModificadosWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoPlanesUsuarioWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/CambiarEstadoPlanesUsuarioWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesUsuariosEspeciales">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesUsuariosEspeciales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesUsuariosEspecialesDT">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesUsuariosEspecialesDT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarPlanesUsuarioEspecialesModificados">
+      <soap:operation soapAction="http://tempuri.org/retornarPlanesUsuarioEspecialesModificados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoPlanesUsuarioEspecialesWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/CambiarEstadoPlanesUsuarioEspecialesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarProfesiones">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarProfesiones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarReservasClienteTiqueteNET">
+      <soap:operation soapAction="http://tempuri.org/ConsultarReservasClienteTiqueteNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarReservasClienteTiqueteNET2">
+      <soap:operation soapAction="http://tempuri.org/ConsultarReservasClienteTiqueteNET2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarReserva">
+      <soap:operation soapAction="http://tempuri.org/InsertarReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarReservaOld">
+      <soap:operation soapAction="http://tempuri.org/InsertarReservaOld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarClases">
+      <soap:operation soapAction="http://tempuri.org/ConsultarClases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarHorarios">
+      <soap:operation soapAction="http://tempuri.org/ConsultarHorarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarReservasWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarReservasWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoReservasWEBtoNET">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoReservasWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarSexos">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarSexos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarSubgrupos">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarSubgrupos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornaSucursales">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornaSucursales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarTipoIDs">
+      <soap:operation soapAction="http://tempuri.org/InsertarModificarRetornarTipoIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInformacionPaciente">
+      <soap:operation soapAction="http://tempuri.org/ConsultarInformacionPaciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarFechaCobroRecurrente">
+      <soap:operation soapAction="http://tempuri.org/CambiarFechaCobroRecurrente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarFechaCobroRecurrente1">
+      <soap:operation soapAction="http://tempuri.org/CambiarFechaCobroRecurrente1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecurrenceByClientByGym">
+      <soap:operation soapAction="http://tempuri.org/GetRecurrenceByClientByGym" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelRecurrence">
+      <soap:operation soapAction="http://tempuri.org/CancelRecurrence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generateCodeChangePassword">
+      <soap:operation soapAction="http://tempuri.org/generateCodeChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveUser">
+      <soap:operation soapAction="http://tempuri.org/saveUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSComunicaNetVigenteSoap12" type="tns:WSComunicaNetVigenteSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatosComercio">
+      <soap12:operation soapAction="http://tempuri.org/GetDatosComercio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitoAutomatico">
+      <soap12:operation soapAction="http://tempuri.org/GetDebitoAutomatico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuarioGSW">
+      <soap12:operation soapAction="http://tempuri.org/ValidarUsuarioGSW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlanVigente">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarPlanVigente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarBarriosNETtoWEB">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarBarriosNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarCiudadesNETtoWEB">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarCiudadesNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClasesWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarClasesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoClasesWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoClasesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClienteNETtoWEB">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarClienteNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClienteWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarClienteWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoClienteWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoClienteWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambioIdentificacionCliente">
+      <soap12:operation soapAction="http://tempuri.org/CambioIdentificacionCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoTiqueteImpresoNET">
+      <soap12:operation soapAction="http://tempuri.org/CambiarEstadoTiqueteImpresoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoTiqueteAsistenciaNET">
+      <soap12:operation soapAction="http://tempuri.org/CambiarEstadoTiqueteAsistenciaNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarClientesExtra">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarClientesExtra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarCobrosAdicionales">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarCobrosAdicionales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarContratos">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarContratos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarComoSupo">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarComoSupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDepartamentos">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarDepartamentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDianNETtoWEB">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarDianNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDianWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarDianWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoDianWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoDianWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEmpresasClientes">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarEmpresasClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesEmpresasClientes">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesEmpresasClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEmpleados">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarEmpleados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEPS">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarEPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarEstratos">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarEstratos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDetalleFactura">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarDetalleFacturaNew">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarDetalleFacturaNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleFacturaModificadosGSWToGSW">
+      <soap12:operation soapAction="http://tempuri.org/retornarDetalleFacturaModificadosGSWToGSW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarEstadoDetalleFacturaGSW">
+      <soap12:operation soapAction="http://tempuri.org/cambiarEstadoDetalleFacturaGSW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarCobroFacturaNew">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarCobroFacturaNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarCobroFacturaModificadosGSWToGSW">
+      <soap12:operation soapAction="http://tempuri.org/retornarCobroFacturaModificadosGSWToGSW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarEstadoCobroFacturaGSW">
+      <soap12:operation soapAction="http://tempuri.org/cambiarEstadoCobroFacturaGSW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarFormasDePago">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarFormasDePago" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarGrupos">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarGrupos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarHobbies">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarHobbies" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarHorariosClasesWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarHorariosClasesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoHorariosClasesWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoHorariosClasesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarIngresos">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarIngresos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMEDPrepa">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarMEDPrepa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMediodeTransp">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarMediodeTransp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarMegas">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarMegas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPasosRegistroNETtoWEB">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarPasosRegistroNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPasosRegistroWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPasosRegistroWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPasosRegistroWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoPasosRegistroWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPelTransaccionWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPelTransaccionWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPelTransaccionesWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoPelTransaccionesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPelDetalleTransaccionWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPelDetalleTransaccionWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoPelTransaccionesDetalleWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanes">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesAdicionales">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesAdicionales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesSucursal">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesSucursal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesSucursalIng">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesSucursalIng" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPlanesUsuarioNETtoWEB">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarPlanesUsuarioNETtoWEB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarPlanesUsuarioNETtoWEBDataTable">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarPlanesUsuarioNETtoWEBDataTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_PlanesUsuarioModificadosWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/Consultar_PlanesUsuarioModificadosWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoPlanesUsuarioWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/CambiarEstadoPlanesUsuarioWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesUsuariosEspeciales">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesUsuariosEspeciales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarPlanesUsuariosEspecialesDT">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarPlanesUsuariosEspecialesDT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarPlanesUsuarioEspecialesModificados">
+      <soap12:operation soapAction="http://tempuri.org/retornarPlanesUsuarioEspecialesModificados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoPlanesUsuarioEspecialesWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/CambiarEstadoPlanesUsuarioEspecialesWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarProfesiones">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarProfesiones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarReservasClienteTiqueteNET">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarReservasClienteTiqueteNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarReservasClienteTiqueteNET2">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarReservasClienteTiqueteNET2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarReserva">
+      <soap12:operation soapAction="http://tempuri.org/InsertarReserva" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarReservaOld">
+      <soap12:operation soapAction="http://tempuri.org/InsertarReservaOld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarClases">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarClases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarHorarios">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarHorarios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarReservasWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarReservasWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarResultadoReservasWEBtoNET">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarResultadoReservasWEBtoNET" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarSexos">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarSexos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarSubgrupos">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarSubgrupos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornaSucursales">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornaSucursales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarModificarRetornarTipoIDs">
+      <soap12:operation soapAction="http://tempuri.org/InsertarModificarRetornarTipoIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInformacionPaciente">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarInformacionPaciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarFechaCobroRecurrente">
+      <soap12:operation soapAction="http://tempuri.org/CambiarFechaCobroRecurrente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarFechaCobroRecurrente1">
+      <soap12:operation soapAction="http://tempuri.org/CambiarFechaCobroRecurrente1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecurrenceByClientByGym">
+      <soap12:operation soapAction="http://tempuri.org/GetRecurrenceByClientByGym" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelRecurrence">
+      <soap12:operation soapAction="http://tempuri.org/CancelRecurrence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generateCodeChangePassword">
+      <soap12:operation soapAction="http://tempuri.org/generateCodeChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveUser">
+      <soap12:operation soapAction="http://tempuri.org/saveUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSComunicaNetVigente">
+    <wsdl:port name="WSComunicaNetVigenteSoap" binding="tns:WSComunicaNetVigenteSoap">
+      <soap:address location="https://gymsoft.siboavance.com.co/GymsoftWeb/Webservices/WSComunicaNetVigente.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSComunicaNetVigenteSoap12" binding="tns:WSComunicaNetVigenteSoap12">
+      <soap12:address location="https://gymsoft.siboavance.com.co/GymsoftWeb/Webservices/WSComunicaNetVigente.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

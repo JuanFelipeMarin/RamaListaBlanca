@@ -1,0 +1,68 @@
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.dll.config
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.pdb
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\EntityFramework.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\EntityFramework.xml
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\es\EntityFramework.resources.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\bin\Release\es\EntityFramework.SqlServer.resources.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csprojAssemblyReference.cache
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csproj.CoreCompileInputs.cache
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csproj.CopyComplete
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.pdb
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.dll.config
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.pdb
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\EntityFramework.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\EntityFramework.xml
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\es\EntityFramework.resources.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\es\EntityFramework.SqlServer.resources.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csprojAssemblyReference.cache
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csproj.CoreCompileInputs.cache
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csproj.CopyComplete
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.pdb
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.dll.config
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.pdb
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\EntityFramework.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\EntityFramework.xml
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\es\EntityFramework.resources.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\bin\Release\es\EntityFramework.SqlServer.resources.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csprojAssemblyReference.cache
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csproj.CoreCompileInputs.cache
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csproj.CopyComplete
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.pdb
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.dll.config
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.DAL.pdb
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\EntityFramework.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\EntityFramework.xml
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\es\EntityFramework.resources.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\bin\Release\es\EntityFramework.SqlServer.resources.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csprojAssemblyReference.cache
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csproj.CoreCompileInputs.cache
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.csproj.CopyComplete
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.DAL\obj\Release\Sibo.WhiteList.DAL.pdb

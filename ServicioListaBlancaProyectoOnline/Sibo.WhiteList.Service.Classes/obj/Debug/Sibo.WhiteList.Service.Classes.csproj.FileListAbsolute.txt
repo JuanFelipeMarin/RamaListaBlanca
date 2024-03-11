@@ -1,0 +1,13 @@
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Sibo.WhiteList.Service.Classes.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Sibo.WhiteList.Service.Classes.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Sibo.WhiteList.Service.BLL.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Sibo.WhiteList.Service.Entities.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Sibo.WhiteList.Service.DAL.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Newtonsoft.Json.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Sibo.WhiteList.Service.BLL.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Sibo.WhiteList.Service.Entities.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Sibo.WhiteList.Service.DAL.pdb
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\bin\Debug\Newtonsoft.Json.xml
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\obj\Debug\Sibo.WhiteList.Service.Classes.csprojResolveAssemblyReference.cache
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\obj\Debug\Sibo.WhiteList.Service.Classes.dll
+F:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\PROYECTO INGRESO\Sibo.WhiteList.Service\Sibo.WhiteList.Service.Classes\obj\Debug\Sibo.WhiteList.Service.Classes.pdb

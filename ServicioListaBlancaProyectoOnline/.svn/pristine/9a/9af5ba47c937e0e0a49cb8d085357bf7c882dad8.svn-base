@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+  <appSettings>
+    <add key="gymId" value="99"/>
+    <add key="branchId" value="1"/>
+    <add key="urlApi" value="http://localhost:63187/"/>
+  </appSettings>
+  <connectionStrings>
+    <add name="strConnection" connectionString="Data Source=RVARGAS2018;Initial Catalog=dbWhitelist;User ID=sa;Password=sibo123;"/>
+  </connectionStrings>
+</configuration>

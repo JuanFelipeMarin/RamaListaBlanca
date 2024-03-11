@@ -1,0 +1,60 @@
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\bin\Release\EntityFramework.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\bin\Release\EntityFramework.xml
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.xml
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csprojAssemblyReference.cache
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CoreCompileInputs.cache
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CopyComplete
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.dll
+D:\RVARGAS\DESARROLLO\NUEVO FORMATEO\DESARROLLO\CÓDIGO\LISTA BLANCA\PROYECTO INGRESO\Sibo.WhiteList\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\EntityFramework.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\EntityFramework.xml
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csprojAssemblyReference.cache
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CoreCompileInputs.cache
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CopyComplete
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.dll
+D:\Proyectos\Services\Gymsoft\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\EntityFramework.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\EntityFramework.xml
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csprojAssemblyReference.cache
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CoreCompileInputs.cache
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CopyComplete
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.dll
+D:\Proyectos\Sibo.GymsoftWeb\Services\WhiteList\API\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\bin\Release\EntityFramework.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\bin\Release\EntityFramework.xml
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csprojAssemblyReference.cache
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CoreCompileInputs.cache
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CopyComplete
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.dll
+D:\Proyecto\ListaBlanca\APIListaBlanca\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll.config
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.dll
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\bin\Release\Sibo.WhiteList.Entities.pdb
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\bin\Release\EntityFramework.dll
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\bin\Release\EntityFramework.xml
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csprojAssemblyReference.cache
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CoreCompileInputs.cache
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.csproj.CopyComplete
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.dll
+D:\Proyecto\ListaBlanca\APIListaBlancaProyectoOnline\Sibo.WhiteList.Entities\obj\Release\Sibo.WhiteList.Entities.pdb

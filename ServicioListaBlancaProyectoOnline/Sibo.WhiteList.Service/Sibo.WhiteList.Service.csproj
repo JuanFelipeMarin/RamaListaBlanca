@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4ADCD27D-A246-4EF2-A561-44393B181DCB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sibo.WhiteList.Service</RootNamespace>
+    <AssemblyName>Sibo.WhiteList.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="HexMaster.ServiceHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HexMaster.WindowsServiceHelper.1.0.6\lib\HexMaster.ServiceHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImagenTCAM7000, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ImagenTCAM7000.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Suprema.UFDatabase, Version=3.4.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Suprema.UFDatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFMatcher, Version=3.0.0.5, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Suprema.UFMatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema.UFScanner, Version=3.7.5.1935, Culture=neutral, PublicKeyToken=48f19decc3fc5c20, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Suprema.UFScanner.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsAccessControlSettings.cs" />
+    <Compile Include="Classes\clsAction.cs" />
+    <Compile Include="Classes\clsActionParameters.cs" />
+    <Compile Include="Classes\clsClients.cs" />
+    <Compile Include="Classes\clsEntry.cs" />
+    <Compile Include="Classes\clsFingerprint.cs" />
+    <Compile Include="Classes\clsHoliday.cs" />
+    <Compile Include="Classes\clsTerminal.cs" />
+    <Compile Include="Classes\clsWhiteList.cs" />
+    <Compile Include="Classes\clsWinSockCliente.cs" />
+    <Compile Include="Connected Services\wsGSW\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsContracts.Designer.cs" />
+    <Compile Include="DataSet\dsContracts1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsContracts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\RptContract.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptContract.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service.WhiteList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service.WhiteList.Designer.cs">
+      <DependentUpon>Service.WhiteList.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\Install.bat" />
+    <None Include="bin\Debug\Sibo.WhiteList.Service.exe.config" />
+    <None Include="bin\Debug\Sibo.WhiteList.Service.vshost.exe.config" />
+    <None Include="bin\Debug\Sibo.WhiteList.Service.vshost.exe.manifest" />
+    <None Include="bin\Debug\Uninstall.bat" />
+    <None Include="Connected Services\wsGSW\Generic1.wsdl" />
+    <None Include="Connected Services\wsGSW\Sibo.WhiteList.Service.wsGSW.eCliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsGSW\Sibo.WhiteList.Service.wsGSW.eHuellas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsGSW\Sibo.WhiteList.Service.wsGSW.eTutorialVideo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\wsGSW\Sibo.WhiteList.Service.wsGSW.validatefootprintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="DataSet\dsContracts.xsc">
+      <DependentUpon>dsContracts.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsContracts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsContracts1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsContracts.xss">
+      <DependentUpon>dsContracts.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.BLL\Sibo.WhiteList.Service.BLL.csproj">
+      <Project>{97c239b8-c307-4a99-ab25-8dde342b24ef}</Project>
+      <Name>Sibo.WhiteList.Service.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sibo.WhiteList.Service.Entities\Sibo.WhiteList.Service.Entities.csproj">
+      <Project>{63cb188f-5303-4770-92ed-bde3bd9f4375}</Project>
+      <Name>Sibo.WhiteList.Service.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptContract.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContract.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\wsGSW\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\wsGSW\Generic1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\wsGSW\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\wsGSW\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\wsGSW\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Audit\Errors\192.168.10.67 - 2020-06-24.txt" />
+    <Content Include="bin\Debug\Audit\Errors\192.168.10.67 - 2020-06-25.txt" />
+    <Content Include="bin\Debug\Audit\Errors\192.168.10.67 - 2020-07-02.txt" />
+    <Content Include="bin\Debug\Audit\Errors\Errors 2020-06-24.txt" />
+    <Content Include="bin\Debug\Audit\Errors\Errors 2020-07-02.txt" />
+    <Content Include="bin\Debug\Audit\Process\192.168.10.54 - 2019-11-08.txt" />
+    <Content Include="bin\Debug\Audit\Process\192.168.10.63 - 2019-11-08.txt" />
+    <Content Include="bin\Debug\Audit\Process\192.168.10.67 - 2020-06-24.txt" />
+    <Content Include="bin\Debug\Audit\Process\192.168.10.67 - 2020-06-25.txt" />
+    <Content Include="bin\Debug\Audit\Process\192.168.10.67 - 2020-07-02.txt" />
+    <Content Include="bin\Debug\Audit\Process\Process 2019-11-08.txt" />
+    <Content Include="bin\Debug\Audit\Process\Process 2020-06-24.txt" />
+    <Content Include="bin\Debug\Audit\Process\Process 2020-06-25.txt" />
+    <Content Include="bin\Debug\Audit\Process\Process 2020-07-02.txt" />
+    <Content Include="bin\Debug\Audit\Terminals\192.168.10.54 - 2019-11-08.txt" />
+    <Content Include="bin\Debug\Audit\Terminals\192.168.10.63 - 2019-11-08.txt" />
+    <Content Include="bin\Debug\Audit\Terminals\192.168.10.67 - 2020-06-24.txt" />
+    <Content Include="bin\Debug\Audit\Terminals\192.168.10.67 - 2020-06-25.txt" />
+    <Content Include="bin\Debug\Audit\Terminals\192.168.10.67 - 2020-07-02.txt" />
+    <Content Include="bin\Debug\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportSource.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.Shared.dll" />
+    <Content Include="bin\Debug\HexMaster.ServiceHelper.dll" />
+    <Content Include="bin\Debug\ImagenTCAM7000.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.BLL.dll" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.BLL.pdb" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.DAL.dll" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.DAL.pdb" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.Entities.dll" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.Entities.pdb" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.exe" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.pdb" />
+    <Content Include="bin\Debug\Sibo.WhiteList.Service.vshost.exe" />
+    <Content Include="bin\Debug\stdole.dll" />
+    <Content Include="bin\Debug\Suprema.UFDatabase.dll" />
+    <Content Include="bin\Debug\Suprema.UFMatcher.dll" />
+    <Content Include="bin\Debug\Suprema.UFScanner.dll" />
+    <Content Include="bin\Debug\UFMatcher.dll" />
+    <Content Include="bin\Debug\UFScanner.dll" />
+    <Content Include="bin\Debug\UFScanner_IZZIX.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

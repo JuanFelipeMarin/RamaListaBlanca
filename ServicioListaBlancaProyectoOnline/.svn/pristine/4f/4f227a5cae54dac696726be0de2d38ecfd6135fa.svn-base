@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sibo.WhiteList.Service.Entities.Classes
+{
+    public class eAction
+    {
+        public int id { get; set; }
+        public string ipAddress { get; set; }
+        public string strAction { get; set; }
+        public string dateAction { get; set; }
+        public bool used { get; set; }
+        public bool stateAction { get; set; }
+        public string modifiedDate { get; set; }
+    }
+}

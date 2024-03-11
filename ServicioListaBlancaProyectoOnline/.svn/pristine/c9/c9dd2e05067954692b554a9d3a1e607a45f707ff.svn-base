@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVideoTutorials">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isNet" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVideoTutorialsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVideoTutorialsResult" type="tns:ArrayOfETutorialVideo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfETutorialVideo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="eTutorialVideo" nillable="true" type="tns:eTutorialVideo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="eTutorialVideo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="technicalName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="formId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="formName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="state" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="creationUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="creationDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="modifiedUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="modifiedDate" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getClientsFilterEmployed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getClientsFilterEmployedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getClientsFilterEmployedResult" type="tns:ArrayOfECliente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfECliente">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="eCliente" nillable="true" type="tns:eCliente" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="eCliente">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="cli_identifi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cli_identifiReal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cli_nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cli_apellidos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cli_direccio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cli_mail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cli_celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cli_telefono" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cli_fecha_nacimien" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cli_tipo_identifi" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cli_sexo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cokie" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="scriptSecurity" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="conveyanceID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="profesionID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="university" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="neighborhoodID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="numberChildren" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="stratumID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="epsID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="rh" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="prepaidHealth" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="itrainingGoals" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ifirstTimeGym" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ihowKnow" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="idPais" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RUC" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetHuella">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHuellaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHuellaResult" type="tns:ArrayOfEHuellas" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEHuellas">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="eHuellas" nillable="true" type="tns:eHuellas" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="eHuellas">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="identification" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="byteHuella" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Huellabyte" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetHuellaGym">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHuellaGymResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHuellaGymResult" type="tns:ArrayOfEHuellas" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHuellaGym2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHuellaGym2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHuellaGym2Result" type="tns:ArrayOfEHuellas" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="validatefootprint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="identifi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imageBytes" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="validatefootprintResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="validatefootprintResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultadehuellasEntidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="identifi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultadehuellasEntidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultadehuellasEntidadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWithPaymentGateway">
+        <s:complexType />
+      </s:element>
+      <s:element name="getWithPaymentGatewayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getWithPaymentGatewayResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWithDebitAccount">
+        <s:complexType />
+      </s:element>
+      <s:element name="getWithDebitAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getWithDebitAccountResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWithPaymentGatewayEmployed">
+        <s:complexType />
+      </s:element>
+      <s:element name="getWithPaymentGatewayEmployedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getWithPaymentGatewayEmployedResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWithDebitAccountEmployed">
+        <s:complexType />
+      </s:element>
+      <s:element name="getWithDebitAccountEmployedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getWithDebitAccountEmployedResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultValidationsIncome">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idsucursal" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultValidationsIncomeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResultValidationsIncomeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkAutomaticDebit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idPlan" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkAutomaticDebitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="checkAutomaticDebitResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdByQR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="qr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdByQRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIdByQRResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="canceledForTemperature">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="qr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="branch" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="temperature" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="entryHour" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="canceledForTemperatureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="canceledForTemperatureResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="validationAccess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="qr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="validationAccessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="validationAccessResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="disableAccessCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codigo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdgimnasio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="disableAccessCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="disableAccessCodesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVideoTutorialsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVideoTutorials" />
+  </wsdl:message>
+  <wsdl:message name="GetVideoTutorialsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVideoTutorialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getClientsFilterEmployedSoapIn">
+    <wsdl:part name="parameters" element="tns:getClientsFilterEmployed" />
+  </wsdl:message>
+  <wsdl:message name="getClientsFilterEmployedSoapOut">
+    <wsdl:part name="parameters" element="tns:getClientsFilterEmployedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHuellaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHuella" />
+  </wsdl:message>
+  <wsdl:message name="GetHuellaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHuellaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHuellaGymSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHuellaGym" />
+  </wsdl:message>
+  <wsdl:message name="GetHuellaGymSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHuellaGymResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHuellaGym2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetHuellaGym2" />
+  </wsdl:message>
+  <wsdl:message name="GetHuellaGym2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetHuellaGym2Response" />
+  </wsdl:message>
+  <wsdl:message name="validatefootprintSoapIn">
+    <wsdl:part name="parameters" element="tns:validatefootprint" />
+  </wsdl:message>
+  <wsdl:message name="validatefootprintSoapOut">
+    <wsdl:part name="parameters" element="tns:validatefootprintResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultadehuellasEntidadSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultadehuellasEntidad" />
+  </wsdl:message>
+  <wsdl:message name="ConsultadehuellasEntidadSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultadehuellasEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWithPaymentGatewaySoapIn">
+    <wsdl:part name="parameters" element="tns:getWithPaymentGateway" />
+  </wsdl:message>
+  <wsdl:message name="getWithPaymentGatewaySoapOut">
+    <wsdl:part name="parameters" element="tns:getWithPaymentGatewayResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWithDebitAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:getWithDebitAccount" />
+  </wsdl:message>
+  <wsdl:message name="getWithDebitAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:getWithDebitAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWithPaymentGatewayEmployedSoapIn">
+    <wsdl:part name="parameters" element="tns:getWithPaymentGatewayEmployed" />
+  </wsdl:message>
+  <wsdl:message name="getWithPaymentGatewayEmployedSoapOut">
+    <wsdl:part name="parameters" element="tns:getWithPaymentGatewayEmployedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWithDebitAccountEmployedSoapIn">
+    <wsdl:part name="parameters" element="tns:getWithDebitAccountEmployed" />
+  </wsdl:message>
+  <wsdl:message name="getWithDebitAccountEmployedSoapOut">
+    <wsdl:part name="parameters" element="tns:getWithDebitAccountEmployedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetResultValidationsIncomeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResultValidationsIncome" />
+  </wsdl:message>
+  <wsdl:message name="GetResultValidationsIncomeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResultValidationsIncomeResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkAutomaticDebitSoapIn">
+    <wsdl:part name="parameters" element="tns:checkAutomaticDebit" />
+  </wsdl:message>
+  <wsdl:message name="checkAutomaticDebitSoapOut">
+    <wsdl:part name="parameters" element="tns:checkAutomaticDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIdByQRSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIdByQR" />
+  </wsdl:message>
+  <wsdl:message name="GetIdByQRSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIdByQRResponse" />
+  </wsdl:message>
+  <wsdl:message name="canceledForTemperatureSoapIn">
+    <wsdl:part name="parameters" element="tns:canceledForTemperature" />
+  </wsdl:message>
+  <wsdl:message name="canceledForTemperatureSoapOut">
+    <wsdl:part name="parameters" element="tns:canceledForTemperatureResponse" />
+  </wsdl:message>
+  <wsdl:message name="validationAccessSoapIn">
+    <wsdl:part name="parameters" element="tns:validationAccess" />
+  </wsdl:message>
+  <wsdl:message name="validationAccessSoapOut">
+    <wsdl:part name="parameters" element="tns:validationAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="disableAccessCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:disableAccessCodes" />
+  </wsdl:message>
+  <wsdl:message name="disableAccessCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:disableAccessCodesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Generic1Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoTutorials">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite consultar y retornar una lista de videos de un formulario específico.</wsdl:documentation>
+      <wsdl:input message="tns:GetVideoTutorialsSoapIn" />
+      <wsdl:output message="tns:GetVideoTutorialsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getClientsFilterEmployed">
+      <wsdl:input message="tns:getClientsFilterEmployedSoapIn" />
+      <wsdl:output message="tns:getClientsFilterEmployedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuella">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite consultar las huellas de un cliente.</wsdl:documentation>
+      <wsdl:input message="tns:GetHuellaSoapIn" />
+      <wsdl:output message="tns:GetHuellaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuellaGym">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite consultar todas las huellas de un gimnasio.</wsdl:documentation>
+      <wsdl:input message="tns:GetHuellaGymSoapIn" />
+      <wsdl:output message="tns:GetHuellaGymSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuellaGym2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite consultar todas las huellas de un gimnasio en una tabla.</wsdl:documentation>
+      <wsdl:input message="tns:GetHuellaGym2SoapIn" />
+      <wsdl:output message="tns:GetHuellaGym2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="validatefootprint">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite consultar todas las huellas que contenga una id de un gimnasio. OD1404</wsdl:documentation>
+      <wsdl:input message="tns:validatefootprintSoapIn" />
+      <wsdl:output message="tns:validatefootprintSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultadehuellasEntidad">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite consultar todas las huellas que contenga una id de un gimnasio. OD1404 y devolverla en una entidad</wsdl:documentation>
+      <wsdl:input message="tns:ConsultadehuellasEntidadSoapIn" />
+      <wsdl:output message="tns:ConsultadehuellasEntidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getWithPaymentGateway">
+      <wsdl:input message="tns:getWithPaymentGatewaySoapIn" />
+      <wsdl:output message="tns:getWithPaymentGatewaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getWithDebitAccount">
+      <wsdl:input message="tns:getWithDebitAccountSoapIn" />
+      <wsdl:output message="tns:getWithDebitAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getWithPaymentGatewayEmployed">
+      <wsdl:input message="tns:getWithPaymentGatewayEmployedSoapIn" />
+      <wsdl:output message="tns:getWithPaymentGatewayEmployedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getWithDebitAccountEmployed">
+      <wsdl:input message="tns:getWithDebitAccountEmployedSoapIn" />
+      <wsdl:output message="tns:getWithDebitAccountEmployedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultValidationsIncome">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite consultar y validar configuración del ingreso.</wsdl:documentation>
+      <wsdl:input message="tns:GetResultValidationsIncomeSoapIn" />
+      <wsdl:output message="tns:GetResultValidationsIncomeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkAutomaticDebit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta si un cliente tiene debito automatico.</wsdl:documentation>
+      <wsdl:input message="tns:checkAutomaticDebitSoapIn" />
+      <wsdl:output message="tns:checkAutomaticDebitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIdByQR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite obtener id del usuario por QR.El ultimo valor que trae en el string es para ver si es cliente o empleado</wsdl:documentation>
+      <wsdl:input message="tns:GetIdByQRSoapIn" />
+      <wsdl:output message="tns:GetIdByQRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="canceledForTemperature">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método para recibir marcaciones denegadas por temperatura.</wsdl:documentation>
+      <wsdl:input message="tns:canceledForTemperatureSoapIn" />
+      <wsdl:output message="tns:canceledForTemperatureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="validationAccess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método de validación de códigos de acceso.</wsdl:documentation>
+      <wsdl:input message="tns:validationAccessSoapIn" />
+      <wsdl:output message="tns:validationAccessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="disableAccessCodes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método de inactivación de códigos de accesos</wsdl:documentation>
+      <wsdl:input message="tns:disableAccessCodesSoapIn" />
+      <wsdl:output message="tns:disableAccessCodesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Generic1Soap" type="tns:Generic1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoTutorials">
+      <soap:operation soapAction="http://tempuri.org/GetVideoTutorials" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientsFilterEmployed">
+      <soap:operation soapAction="http://tempuri.org/getClientsFilterEmployed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuella">
+      <soap:operation soapAction="http://tempuri.org/GetHuella" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuellaGym">
+      <soap:operation soapAction="http://tempuri.org/GetHuellaGym" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuellaGym2">
+      <soap:operation soapAction="http://tempuri.org/GetHuellaGym2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validatefootprint">
+      <soap:operation soapAction="http://tempuri.org/validatefootprint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultadehuellasEntidad">
+      <soap:operation soapAction="http://tempuri.org/ConsultadehuellasEntidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWithPaymentGateway">
+      <soap:operation soapAction="http://tempuri.org/getWithPaymentGateway" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWithDebitAccount">
+      <soap:operation soapAction="http://tempuri.org/getWithDebitAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWithPaymentGatewayEmployed">
+      <soap:operation soapAction="http://tempuri.org/getWithPaymentGatewayEmployed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWithDebitAccountEmployed">
+      <soap:operation soapAction="http://tempuri.org/getWithDebitAccountEmployed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultValidationsIncome">
+      <soap:operation soapAction="http://tempuri.org/GetResultValidationsIncome" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkAutomaticDebit">
+      <soap:operation soapAction="http://tempuri.org/checkAutomaticDebit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdByQR">
+      <soap:operation soapAction="http://tempuri.org/GetIdByQR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="canceledForTemperature">
+      <soap:operation soapAction="http://tempuri.org/canceledForTemperature" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validationAccess">
+      <soap:operation soapAction="http://tempuri.org/validationAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disableAccessCodes">
+      <soap:operation soapAction="http://tempuri.org/disableAccessCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Generic1Soap12" type="tns:Generic1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoTutorials">
+      <soap12:operation soapAction="http://tempuri.org/GetVideoTutorials" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientsFilterEmployed">
+      <soap12:operation soapAction="http://tempuri.org/getClientsFilterEmployed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuella">
+      <soap12:operation soapAction="http://tempuri.org/GetHuella" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuellaGym">
+      <soap12:operation soapAction="http://tempuri.org/GetHuellaGym" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuellaGym2">
+      <soap12:operation soapAction="http://tempuri.org/GetHuellaGym2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validatefootprint">
+      <soap12:operation soapAction="http://tempuri.org/validatefootprint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultadehuellasEntidad">
+      <soap12:operation soapAction="http://tempuri.org/ConsultadehuellasEntidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWithPaymentGateway">
+      <soap12:operation soapAction="http://tempuri.org/getWithPaymentGateway" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWithDebitAccount">
+      <soap12:operation soapAction="http://tempuri.org/getWithDebitAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWithPaymentGatewayEmployed">
+      <soap12:operation soapAction="http://tempuri.org/getWithPaymentGatewayEmployed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWithDebitAccountEmployed">
+      <soap12:operation soapAction="http://tempuri.org/getWithDebitAccountEmployed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultValidationsIncome">
+      <soap12:operation soapAction="http://tempuri.org/GetResultValidationsIncome" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkAutomaticDebit">
+      <soap12:operation soapAction="http://tempuri.org/checkAutomaticDebit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdByQR">
+      <soap12:operation soapAction="http://tempuri.org/GetIdByQR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="canceledForTemperature">
+      <soap12:operation soapAction="http://tempuri.org/canceledForTemperature" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validationAccess">
+      <soap12:operation soapAction="http://tempuri.org/validationAccess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disableAccessCodes">
+      <soap12:operation soapAction="http://tempuri.org/disableAccessCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Generic1">
+    <wsdl:port name="Generic1Soap" binding="tns:Generic1Soap">
+      <soap:address location="https://gymsoft.siboavance.com.co/GymsoftWeb/WebServices/Generic1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Generic1Soap12" binding="tns:Generic1Soap12">
+      <soap12:address location="https://gymsoft.siboavance.com.co/GymsoftWeb/WebServices/Generic1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

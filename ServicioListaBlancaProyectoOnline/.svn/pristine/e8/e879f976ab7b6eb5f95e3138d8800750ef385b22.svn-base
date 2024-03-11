@@ -1,0 +1,2 @@
+- No es posible conectar con el servidor remoto    en Sibo.WhiteList.Service.DAL.API.AccessControlSettingsAPI.GetAccessControlSettings(Int32 gymId, Int32 branchId) en D:\Desarrollo\Gymsoft\Servicios\Service - ListaBlanca\Sibo.WhiteList.Service.DAL\API\AccessControlSettingsAPI.cs:línea 46
+   en Sibo.WhiteList.Service.BLL.AccessControlSettingsBLL.GetAccessControlSettings(Int32 gymId, Int32 branchId) en D:\Desarrollo\Gymsoft\Servicios\Service - ListaBlanca\Sibo.WhiteList.Service.BLL\BLL\AccessControlSettingsBLL.cs:línea 30  (Fecha: 3/04/2023 2:32:26 p. m.)

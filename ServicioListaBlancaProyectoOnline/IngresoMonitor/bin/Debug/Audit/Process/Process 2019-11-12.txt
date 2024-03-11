@@ -1,0 +1,5 @@
+- Ocurrió un error en el proceso, por favor verificar el log de errores.  (Fecha: 12/11/2019 9:35:40)
+- Ocurrió un error en el proceso, por favor verificar el log de errores.  (Fecha: 12/11/2019 9:37:10)
+- Ocurrió un error en el proceso, por favor verificar el log de errores.  (Fecha: 12/11/2019 9:43:03)
+- Ocurrió un error en el proceso, por favor verificar el log de errores.  (Fecha: 12/11/2019 9:51:23)
+- Ocurrió un error en el proceso, por favor verificar el log de errores.  (Fecha: 12/11/2019 10:09:37)
